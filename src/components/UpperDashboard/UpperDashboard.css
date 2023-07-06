@@ -1,0 +1,78 @@
+.upper__dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px;
+}
+.upper__dashboard .upper__dashboard__left{
+    flex-basis: 75%;
+}
+.upper__dashboard__left .upper__left__banner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+ padding: 20px;
+    border-radius: 15px;
+    background: url('https://th.bing.com/th/id/R.880fc64e6eddb628b39fb3e9d3f9dc6f?rik=bXj0ej7BscqFsg&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f05%2f24%2f306086-nature.jpg&ehk=wFrXgS1v1FDiVRXzcDu8jkkBlJBiKDneuTH%2f3Dp2X4c%3d&risl=&pid=ImgRaw&r=0');
+    background-repeat: no-repeat;
+    background-origin: center;
+    background-size: cover;
+    height: 199px;
+
+}
+.upper__left__banner p{
+    color: #fff;
+    margin: 10px 0;
+}
+.upper__left__banner button{
+    background-color: #6699CC;
+    color: #fff;
+    border-radius: 9px;
+    padding: 14px 0px 14px 0px;
+    border: none;
+    outline: none;
+    width: 125px;
+
+}
+
+.upper__dashboard__left .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.upper__dashboard__left .cards .single__card{
+    flex-basis: 48%;
+    height: 110px;
+    border: 1px solid #E9EBF8;
+    border-radius: 15px;
+    margin: 10px 0;
+ padding: 10px;
+}
+.single__card .card__header{
+    display: flex;
+    align-items: center;
+}
+.card__header span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #2C2C2C;
+    margin-left: 5px;
+}
+.single__card p{
+    font-weight: 700;
+    font-size: 28px;
+  margin: 0 5px;
+}
+.upper__dashboard .upper__dashboard__right{
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96%;
+   border: 1px solid #E9EBF8;
+   border-radius: 15px;
+  margin-left: 20px;
+}

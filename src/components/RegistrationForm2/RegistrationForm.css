@@ -1,0 +1,107 @@
+
+.registration__form .form__header{
+    text-align: center;
+  margin-bottom: 50px;
+}
+.form__header h2{
+    font-weight: 600;
+    font-size: 36px;
+}
+.form__header p{
+    color: #808080;
+    font-size: 20px;
+    margin: 5px 0;
+}
+.form__inputs .single__form__input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px 0;
+}
+.single__form__input label{
+    color: #2C2C2C;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.single__form__input input{
+    width: 100%;
+    padding: 20px 304px 20px 24px;
+ background-color: #fff;
+    outline: none;
+    border: none;
+    color: #2C2C2C;
+    font-size: 16px;
+    border-radius: 12px;
+}
+.single__form__input textarea{
+    width: 100%;
+    padding: 20px 304px 20px 24px;
+ background-color: #fff;
+    outline: none;
+    border: none;
+    color: #2C2C2C;
+    font-size: 16px;
+    border-radius: 12px;
+    resize: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.single__form__input textarea::placeholder{
+    color: ##2C2C2C;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.single__form__input .custom__dropdown{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 14px 20px 24px;
+border-radius: 12px;
+background-color: #fff;
+position: relative;
+}
+.single__form__input .custom__dropdown p, .MuiSvgIcon-root{
+    background-color: #fff;
+}
+.custom__dropdown .options{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+.custom__dropdown .options p{
+    padding: 5px 10px;
+}
+.custom__dropdown .options p:hover{
+    cursor: pointer;
+background-color: #e6e6e6a9;
+}
+
+.single__form__input.viewPassword{
+    position: relative;
+}
+.single__form__input.viewPassword .MuiSvgIcon-root{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    color: #130F26;
+}
+.single__form__input button{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color: #6699CC;
+    padding: 20px 205px 20px 205px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+ 
+}

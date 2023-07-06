@@ -1,0 +1,64 @@
+.risk__assessment__page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;
+}
+.risk__assessment__page .risk__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin: 20px 0;
+}
+.risk__header h2{
+    font-weight: 600;
+    font-size: 36px;
+    margin: 10px 0;
+}
+.risk__header p{
+    color: "#808080";
+    font-size: 20px; 
+}
+.risk__assessment__page .questions{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+
+}
+.questions .question{
+    color: #130F26;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 10px 0;
+}
+.questions .options {
+    user-select: none;
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.questions .options span{
+    margin-left: -40px;
+    font-size: 20px;
+    color: #808080;
+    font-weight: 400;
+    cursor: pointer;
+}
+.risk__assessment__page .questions button{
+    width: 120%;
+    background-color: #6699CC;
+    color: #fff;
+    padding: 16px 0px 16px 0px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
