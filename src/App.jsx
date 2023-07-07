@@ -1,4 +1,7 @@
+import AddfundPage from "./pages/AddfundPage/AddfundPage";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import InvestedFundsDetails from "./pages/InvestedFundsDetails/InvestedFundsDetails";
+import InvestmentFundsPage from "./pages/InvestmentFundsPage/InvestmentFundsPage";
 import OnboardingPage from "./pages/OnboardingPage/OnboardingPage";
 import RegistrationPage from "./pages/RegistrationPage/RegistrationPage";
 import RegistrationPage2 from "./pages/RegistrationPage2/RegistrationPage2";
@@ -17,7 +20,10 @@ function App() {
       {/* <OnboardingPage /> */}
       {/* <RiskPage /> */}
       {/* <RiskAssessmentPage /> */}
-      <Dashboard />
+      {/* <Dashboard /> */}
+      {/* <InvestmentFundsPage /> */}
+      <InvestedFundsDetails />
+      {/* <AddfundPage /> */}
     </>
   );
 }

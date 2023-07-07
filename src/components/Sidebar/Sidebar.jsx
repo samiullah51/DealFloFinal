@@ -8,7 +8,9 @@ import chart from "../../assets/chart.svg";
 import infoicon from "../../assets/infoicon.svg";
 import settingicon from "../../assets/settingicon.svg";
 import logouticon from "../../assets/logouticon.svg";
-function Sidebar() {
+import walletActive from "../../assets/walletActive.svg";
+import dashboardActive from "../../assets/dashboardActive.svg";
+function Sidebar({ status }) {
   return (
     <div className="sidebar">
       <div className="upper__sidebar">
@@ -18,12 +20,20 @@ function Sidebar() {
         </h2>
         {/* menu items */}
         <div className="menu__items">
-          <a className="single__item active">
-            <img src={dashboardicon} alt="" />
+          <a className="single__item">
+            <img
+              src={
+                status === "dashboardActive" ? dashboardicon : dashboardActive
+              }
+              alt=""
+            />
             <span>Dashboard</span>
           </a>
-          <a className="single__item">
-            <img src={investicon} alt="" />
+          <a className="single__item active">
+            <img
+              src={status === "walletActive" ? investicon : walletActive}
+              alt=""
+            />
             <span>Investments Funds</span>
           </a>
           <a className="single__item">

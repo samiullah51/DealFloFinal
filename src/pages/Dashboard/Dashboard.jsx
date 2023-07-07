@@ -9,7 +9,7 @@ function Dashboard() {
   return (
     <div className="dashboard">
       {/* sidebar */}
-      <Sidebar />
+      <Sidebar status="dashboardActive" />
       {/* main contents */}
       <div className="contents">
         {/* navbar */}

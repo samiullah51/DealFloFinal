@@ -81,7 +81,7 @@ position: relative;
 }
 .custom__dropdown .options p:hover{
     cursor: pointer;
-background-color: #e6e6e6a9;
+background-color: #ececec;
 }
 
 .single__form__input.viewPassword{

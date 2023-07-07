@@ -1,6 +1,6 @@
 .upper__dashboard{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 95%;
     margin: 20px;
@@ -51,6 +51,7 @@
     margin: 10px 0;
  padding: 10px;
  position: relative;
+ background-color: #fff;
 }
 .single__card .card__header{
     display: flex;
@@ -86,8 +87,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 96%;
+    height: 320px;
    border: 1px solid #E9EBF8;
    border-radius: 15px;
   margin-left: 20px;
+  background-color: #fff;
 }

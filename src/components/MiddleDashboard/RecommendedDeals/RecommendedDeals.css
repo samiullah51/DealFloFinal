@@ -1,3 +1,4 @@
+
 .recommended__deals h2{
     font-size: 20px;
     font-weight: 600;
@@ -37,7 +38,7 @@
     color: #808080;
     font-size: 12px;
 }
-.deal__header .days__left{
+.days__left{
     padding: 6px 14px 6px 14px;
     width: 84px;
     height: 24px;
