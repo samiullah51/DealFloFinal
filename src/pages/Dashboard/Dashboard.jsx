@@ -3,6 +3,7 @@ import "./Dashboard.css";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Navbar from "../../components/Navbar/Navbar";
 import UpperDashboard from "../../components/UpperDashboard/UpperDashboard";
+import MiddleDashboard from "../../components/MiddleDashboard/MiddleDashboard";
 function Dashboard() {
   return (
     <div className="dashboard">
@@ -15,6 +16,8 @@ function Dashboard() {
         {/* contents goes here */}
         {/* dashboard upper */}
         <UpperDashboard />
+        {/* middle dashboard */}
+        <MiddleDashboard />
       </div>
     </div>
   );

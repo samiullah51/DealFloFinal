@@ -50,6 +50,7 @@
     border-radius: 15px;
     margin: 10px 0;
  padding: 10px;
+ position: relative;
 }
 .single__card .card__header{
     display: flex;
@@ -61,10 +62,24 @@
     color: #2C2C2C;
     margin-left: 5px;
 }
+
 .single__card p{
     font-weight: 700;
     font-size: 28px;
   margin: 0 5px;
+}
+.single__card p span{
+    display: flex;
+    align-items: center;
+    color: #22C55E;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+}
+.single__card p span img{
+    margin-right: 10px;
 }
 .upper__dashboard .upper__dashboard__right{
     flex-basis: 25%;

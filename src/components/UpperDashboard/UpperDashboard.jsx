@@ -2,6 +2,7 @@ import React from "react";
 import "./UpperDashboard.css";
 import wallet from "../../assets/wallet.svg";
 import total from "../../assets/total.svg";
+import trendingup from "../../assets/trendingup.svg";
 function UpperDashboard() {
   return (
     <div className="upper__dashboard">
@@ -28,11 +29,18 @@ function UpperDashboard() {
               <img src={total} alt="" />
               <span>Total Profit</span>
             </div>
-            <p>$205,875</p>
+            <p>
+              $205,875
+              <span>
+                <img src={trendingup} alt="" /> +16.24 %
+              </span>
+            </p>
           </div>
         </div>
       </div>
-      <div className="upper__dashboard__right">right</div>
+      <div className="upper__dashboard__right">
+        <h2>Chart here</h2>
+      </div>
     </div>
   );
 }

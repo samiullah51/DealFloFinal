@@ -1,0 +1,25 @@
+.middle__dashboard{
+    width: 95%;
+    margin: -10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 383px;
+}
+.middle__dashboard .middle__left{
+    flex-basis: 49%;
+    height: 100%;
+    border: 1px solid #E9EBF8;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle__dashboard .middle__right{
+    flex-basis: 49%;
+    height: 100%;
+    border: 1px solid #E9EBF8;
+    border-radius: 15px;
+    padding: 20px;
+
+}
