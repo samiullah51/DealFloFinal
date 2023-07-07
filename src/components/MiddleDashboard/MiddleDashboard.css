@@ -21,5 +21,7 @@
     border: 1px solid #E9EBF8;
     border-radius: 15px;
     padding: 20px;
+    overflow-y: scroll;
 
 }
+.middle__right::-webkit-scrollbar{display: none;}

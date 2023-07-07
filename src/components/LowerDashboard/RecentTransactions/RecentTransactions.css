@@ -1,0 +1,81 @@
+.recent__transactions{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.single__transaction{
+    width: 100%;
+    width: 501px;
+    height: 173px;
+    padding: 15px;
+    border: 1px solid #E9EBF8;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.single__transaction .transaction__header{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.transaction__header .transaction__header__left{
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-start;
+}
+.transaction__header .transaction__header__left img{
+    width: 66px;
+    height: 66px;
+    margin-right: 10px;
+}
+.transaction__header__left .transaction__info__title{
+    color: #141736;
+    font-size: 18px;
+    font-weight: 600;
+}
+.transaction__header .transaction__header__left .transaction__info__date{
+    color: #A5B3CD;
+    font-size: 14px;
+    font-weight: 400;
+}
+.transaction__header .invetment__type{
+    font-size: 14px;
+    font-weight: 400;
+}
+.invetment__type span{
+    font-weight: 600;
+}
+
+.single__transaction .transaction__footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.transaction__footer .amount__invested{
+    font-size: 12px;
+    color: #808080;
+    font-weight: 400;
+}
+.transaction__footer .amount__price{
+    font-size: 16px;
+    font-weight: 600;
+}
+.transaction__footer button{
+    width: 118px;
+    height: 45px;
+    border-radius: 9px;
+    padding: 14px 18px 14px 18px;
+    border: 1px solid #6699CC;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #6699cc33;
+cursor: pointer;
+}
