@@ -59,6 +59,7 @@
     border: 1px solid #fff;
 }
 .navbar__right .searchbox input{
+    width: 100%;
     border: none;
     outline: none;
     margin-left: 10px;

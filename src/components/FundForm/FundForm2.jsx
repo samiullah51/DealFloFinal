@@ -22,7 +22,7 @@ function FundForm2() {
   const [showCpassword, setShowCpassword] = useState(false);
   return (
     <div className="fund__form">
-      <h1>Create investment fund 2</h1>
+      <h1>Create investment fund</h1>
       {/* stiper */}
       <FundStiper stipe="second" />
       {/* form  */}

@@ -1,5 +1,6 @@
 import AddfundPage from "./pages/AddfundPage/AddfundPage";
 import AddfundPage2 from "./pages/AddfundPage/AddfundPage2";
+import AddfundPage3 from "./pages/AddfundPage/AddfundPage3";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import InvestedFundsDetails from "./pages/InvestedFundsDetails/InvestedFundsDetails";
 import InvestmentFundsPage from "./pages/InvestmentFundsPage/InvestmentFundsPage";
@@ -25,7 +26,8 @@ function App() {
       {/* <InvestmentFundsPage /> */}
       {/* <InvestedFundsDetails /> */}
       {/* <AddfundPage /> */}
-      <AddfundPage2 />
+      {/* <AddfundPage2 /> */}
+      <AddfundPage3 />
     </>
   );
 }

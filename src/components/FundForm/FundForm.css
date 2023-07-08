@@ -137,3 +137,70 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-left: auto;
     cursor: pointer;
 }
+.form__box__input__row .row4__inputs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* align-items: baseline; */
+    justify-content: space-between;
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+.row4__inputs .row4__inputbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row4__inputbox label{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.row4__inputbox input{
+    border: 1px solid #D9D9D9;
+    width: 290px;
+    padding: 16px 0px 16px 23px;
+    border-radius: 12px;
+outline: none;
+font-size: 16px;
+}
+.form__box__input__row .legal__advisor{
+    width: 490px;
+    height: 75px;
+    background-color: #F9F9F9;
+    padding: 18px 23px 18px 23px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+.legal__advisor img{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #F9F9F9;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.legal__advisor .title{
+    font-size: 16px;
+    font-weight: 400;
+}
+.legal__advisor .status{
+    font-size: 12px;
+    color: #808080;
+    font-weight: 400;
+}
+.legal__advisor .email{
+    color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+}
