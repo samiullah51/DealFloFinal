@@ -6,7 +6,7 @@ import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined
 function SigninPage() {
   const [show, setShow] = useState(false);
   return (
-    <div className="role__page">
+    <div className="role__page res">
       {/* who are you section */}
       <div className="role__left">
         <div className="role__select">

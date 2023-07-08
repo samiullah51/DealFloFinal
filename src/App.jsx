@@ -20,14 +20,14 @@ function App() {
       {/* <RegistrationPage /> */}
       {/* <RegistrationPage2 /> */}
       {/* <OnboardingPage /> */}
-      {/* <RiskPage /> */}
+      <RiskPage />
       {/* <RiskAssessmentPage /> */}
       {/* <Dashboard /> */}
       {/* <InvestmentFundsPage /> */}
       {/* <InvestedFundsDetails /> */}
       {/* <AddfundPage /> */}
       {/* <AddfundPage2 /> */}
-      <AddfundPage3 />
+      {/* <AddfundPage3 /> */}
     </>
   );
 }

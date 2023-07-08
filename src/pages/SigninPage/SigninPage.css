@@ -52,3 +52,40 @@ width: 100%;
     cursor: pointer;
     font-size: 16px;
 }
+
+/* responsiveness
+@media screen and (max-width:600px) {
+
+
+  .role__page.res{
+    width: 90%;
+    margin: auto;
+  }
+ .role__page.res .select__section{
+    width: 90vw;
+    margin: auto;
+ }
+ .role__select h2{
+    font-size: 30px;
+ }
+ .role__select p{
+    font-size: 16px;
+ }
+ .select__section{
+    width: 200px;
+ }
+ .select__section .single__input{
+    width: 200px;
+   background-color: red;
+
+ }
+ .single__input input{
+    width: 100px;
+    margin: auto;
+ }
+ .select__section button{
+   width: 100%;
+   padding: 10px;
+
+ }
+} */
