@@ -5,6 +5,9 @@
    align-items: center;
    justify-content: space-between;
    background-color: #fff;
+   position: sticky;
+   top: 0;
+   z-index: 999;
 }
 
 .navbar .navbar__left{

@@ -1,0 +1,36 @@
+.fund__stiper{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 30px 0;
+}
+
+.fund__stiper .circle__box .circle{
+    width: 44px;
+    height: 44px;
+    padding: 13px 18px 13px 18px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.fund__stiper .circle span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    color: #000;
+    text-align: center;
+    min-width:140px ;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+   
+}
+.fund__stiper .line{
+    width: 264px;
+    height: 3px;
+    background-color: #D9D9D9;
+}

@@ -7,7 +7,7 @@ function LowerDashboard() {
       <h2>Recent Transactions</h2>
       {/*Recent Transactions */}
       <RecentTransactions />
-      <div style={{ marginTop: "100px", height: "40px" }}></div>
+      {/* <div style={{ marginTop: "100px", height: "40px" }}></div> */}
     </div>
   );
 }

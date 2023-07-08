@@ -6,6 +6,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    left: 0;
+    top: 0;
 }
 .sidebar .upper__sidebar, .sidebar .lower__sidebar{
     width: 100%;

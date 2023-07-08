@@ -1,10 +1,139 @@
 .fund__form{
-    width: 90%;
+    width: 96%;
     margin: auto;
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 12px;
 }
 .fund__form h1{
     text-align: center;
     font-size: 22px;
     font-weight: 600;
-    margin: 20px 0;
+    margin: 25px 0;
+}
+.fund__form .form__box{
+    width: 100%;
+    
+    margin-top: 60px;
+}
+.fund__form .form__box__input__row{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+    width: 94%;
+   margin: auto;
+}
+
+.form__box__input__row .single__form__input{
+    flex-basis: 49%;
+    margin-top: 5px;
+margin-bottom: 15px;
+}
+
+.form__box__input__row .single__form__input .options p{
+    color: #808080;
+}
+.form__box__input__row .single__form__input .custom__dropdown{
+   border: 1px solid #ccc;
+   height: 51px;
+   margin-top: 5px;
+}
+
+.dates{
+    width: 51%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -8px;
+}
+.form__box__input__row .dates input{
+  width: 240px;
+    padding: 14px 19px 14px 19px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #808080;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dates input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+   width: 22px;
+   height: 22px;
+    -webkit-appearance: none;
+}
+
+.form__box__input__row .single__form__input textarea{
+    background-color: #fff;
+    width: 204%;
+    border: 1px solid #D9D9D9;
+    margin-top: 5px;
+}
+.form__box__input__row button{
+    width: 100%;
+    border: 1px solid #6699CC;
+    outline: none;
+    cursor: pointer;
+    padding: 17px 0px 17px 0px;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #6699cc2a;
+}
+.form__box__input__row.file{
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #80808080;
+    border-radius: 12px;
+    height: 99px;
+    margin: 25px auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.form__box__input__row.file:hover{
+    background-color: rgb(231, 231, 231);
+}
+.form__box__input__row.file label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.form__box__input__row.file label input{
+    display: none;
+}
+.form__box__input__row .icon__box{
+    flex-basis: 48%;
+    background-color: #F9F9F9;
+    padding: 13px 11px 13px 11px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+.icon__box img{
+    margin-right: 5px;
+}
+.icon__box .title{
+    font-weight: 400;
+    font-size: 14px;
+
+}
+.icon__box .status{
+    color: #808080;
+    font-size: 12px;
+}
+.icon__box .closeicon{
+    align-self: center;
+    margin-left: auto;
+    cursor: pointer;
 }
