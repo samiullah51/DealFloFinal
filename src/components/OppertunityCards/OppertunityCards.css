@@ -1,0 +1,70 @@
+.oppertunity__cards{
+    width: 93%;
+    margin:30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    
+}
+.oppertunity__cards .single__oppertunity__card
+{
+    width: 339px;
+    margin: 10px 0px;
+    padding: 20px 19px 20px 19px;
+    border: 1px solid #E9EBF8;
+    height: 268px;
+    border-radius: 12px;
+}
+.single__oppertunity__card .opper__header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.single__oppertunity__card .opper__header img{
+    margin-right: 10px;
+    width: 66px;
+    height: 66px;
+}
+.single__oppertunity__card .opper__header p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.single__oppertunity__card .opper__header span{
+    font-size: 14px;
+    color: #808080;
+}
+.single__oppertunity__card .line{
+height: 1px;
+width: 100%;
+background-color: #E9EBF8;
+margin: 20px 0;
+}
+.single__oppertunity__card .opper__body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.opper__body span{
+    font-size: 12px;
+    color:#808080 ;
+}
+.opper__body p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.opper__body.lower{
+    margin-top: 30px;
+}
+.opper__body button{
+    border: 1px solid #6699CC;
+    padding: 13px 24px 13px 24px;
+    border-radius: 12px;
+    user-select: none;
+    background-color: #6699cc15;
+    cursor: pointer;
+    font-size: 16px;
+}

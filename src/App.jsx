@@ -6,6 +6,8 @@ import InvestManagementDetails from "./pages/InvestManagementDetails/InvestManag
 import InvestedFundsDetails from "./pages/InvestedFundsDetails/InvestedFundsDetails";
 import InvestmentFundsPage from "./pages/InvestmentFundsPage/InvestmentFundsPage";
 import InvestmentManagePage from "./pages/InvestmentManagePage/InvestmentManagePage";
+import InvestmentOpperDetails from "./pages/InvestmentOpperDetails/InvestmentOpperDetails";
+import InvestmentOppertunityPage from "./pages/InvestmentOppertunityPage/InvestmentOppertunityPage";
 import OnboardingPage from "./pages/OnboardingPage/OnboardingPage";
 import RegistrationPage from "./pages/RegistrationPage/RegistrationPage";
 import RegistrationPage2 from "./pages/RegistrationPage2/RegistrationPage2";
@@ -21,7 +23,7 @@ function App() {
       {/* <SigninPage /> */}
       {/* <RegistrationPage /> */}
       {/* <RegistrationPage2 /> */}
-      {/* <OnboardingPage /> */}
+      <OnboardingPage />
       {/* <RiskPage /> */}
       {/* <RiskAssessmentPage /> */}
       {/* <Dashboard /> */}
@@ -30,8 +32,10 @@ function App() {
       {/* <AddfundPage /> */}
       {/* <AddfundPage2 /> */}
       {/* <AddfundPage3 /> */}
-      <InvestmentManagePage />
+      {/* <InvestmentManagePage /> */}
       {/* <InvestManagementDetails /> */}
+      {/* <InvestmentOppertunityPage /> */}
+      {/* <InvestmentOpperDetails /> */}
     </>
   );
 }
