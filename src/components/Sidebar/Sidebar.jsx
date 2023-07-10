@@ -10,6 +10,7 @@ import settingicon from "../../assets/settingicon.svg";
 import logouticon from "../../assets/logouticon.svg";
 import walletActive from "../../assets/walletActive.svg";
 import dashboardActive from "../../assets/dashboardActive.svg";
+import investorActive from "../../assets/investorActive.svg";
 function Sidebar({ status }) {
   return (
     <div className="sidebar">
@@ -29,7 +30,7 @@ function Sidebar({ status }) {
             />
             <span>Dashboard</span>
           </a>
-          <a className="single__item active">
+          <a className="single__item">
             <img
               src={status === "walletActive" ? investicon : walletActive}
               alt=""
@@ -40,8 +41,9 @@ function Sidebar({ status }) {
             <img src={investoppericon} alt="" />
             <span>Invest Oppertunities</span>
           </a>
-          <a className="single__item">
-            <img src={workicon} alt="" />
+          <a className="single__item active">
+            {/* <img src={workicon} alt="" /> */}
+            <img src={investorActive} alt="" />
             <span>Investor Management</span>
           </a>
           <a className="single__item">

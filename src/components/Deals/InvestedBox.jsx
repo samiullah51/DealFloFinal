@@ -1,10 +1,10 @@
 import React from "react";
 
-function InvestedBox() {
+function InvestedBox({ title, amount }) {
   return (
     <div>
-      <p className="amount__invested">Amount Invested</p>
-      <p className="amount__price">$10,000</p>
+      <p className="amount__invested">{title}</p>
+      <p className="amount__price">{amount}</p>
     </div>
   );
 }

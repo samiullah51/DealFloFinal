@@ -18,7 +18,7 @@ function InvestedFundsDetails() {
         <Navbar />
 
         {/* funds details header */}
-        <FundDetailsHeader />
+        <FundDetailsHeader type="funds" />
 
         <div
           style={{
