@@ -14,13 +14,13 @@ function Dashboard() {
       <div className="contents">
         {/* navbar */}
         <Navbar />
-        {/* contents goes here */}
+        {/* contents goes here
         {/* dashboard upper */}
-        <UpperDashboard />
+        {/* <UpperDashboard /> */}
         {/* middle dashboard */}
-        <MiddleDashboard />
+        {/* <MiddleDashboard /> */}
         {/* lower dashboard */}
-        <LowerDashboard />
+        {/* <LowerDashboard />  */}
       </div>
     </div>
   );

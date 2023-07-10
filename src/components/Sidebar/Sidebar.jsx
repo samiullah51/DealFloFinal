@@ -11,66 +11,124 @@ import logouticon from "../../assets/logouticon.svg";
 import walletActive from "../../assets/walletActive.svg";
 import dashboardActive from "../../assets/dashboardActive.svg";
 import investorActive from "../../assets/investorActive.svg";
+import second from "../../assets/res/second.svg";
+import third from "../../assets/res/third.svg";
+import fourth from "../../assets/res/fourth.svg";
+import fifth from "../../assets/res/fifth.svg";
+import sixth from "../../assets/res/sixth.svg";
+import seventh from "../../assets/res/seventh.svg";
+import eight from "../../assets/res/eight.svg";
 function Sidebar({ status }) {
   return (
-    <div className="sidebar">
-      <div className="upper__sidebar">
-        {/* logo */}
-        <h2>
-          Deal<span style={{ fontWeight: "400" }}>Flo</span>
-        </h2>
-        {/* menu items */}
-        <div className="menu__items">
-          <a className="single__item">
-            <img
-              src={
-                status === "dashboardActive" ? dashboardicon : dashboardActive
-              }
-              alt=""
-            />
-            <span>Dashboard</span>
-          </a>
-          <a className="single__item">
-            <img
-              src={status === "walletActive" ? investicon : walletActive}
-              alt=""
-            />
-            <span>Investments Funds</span>
-          </a>
-          <a className="single__item">
-            <img src={investoppericon} alt="" />
-            <span>Invest Oppertunities</span>
-          </a>
-          <a className="single__item active">
-            {/* <img src={workicon} alt="" /> */}
-            <img src={investorActive} alt="" />
-            <span>Investor Management</span>
-          </a>
-          <a className="single__item">
-            <img src={chart} alt="" />
-            <span>Portfolio</span>
-          </a>
+    <>
+      <div className="sidebar">
+        <div className="upper__sidebar">
+          {/* logo */}
+          <h2>
+            Deal<span style={{ fontWeight: "400" }}>Flo</span>
+          </h2>
+          {/* menu items */}
+          <div className="menu__items">
+            <a className="single__item">
+              <img
+                src={
+                  status === "dashboardActive" ? dashboardicon : dashboardActive
+                }
+                alt=""
+              />
+              <span>Dashboard</span>
+            </a>
+            <a className="single__item">
+              <img
+                src={status === "walletActive" ? investicon : walletActive}
+                alt=""
+              />
+              <span>Investments Funds</span>
+            </a>
+            <a className="single__item">
+              <img src={investoppericon} alt="" />
+              <span>Invest Oppertunities</span>
+            </a>
+            <a className="single__item active">
+              {/* <img src={workicon} alt="" /> */}
+              <img src={investorActive} alt="" />
+              <span>Investor Management</span>
+            </a>
+            <a className="single__item">
+              <img src={chart} alt="" />
+              <span>Portfolio</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="lower__sidebar">
+          {/* menu items */}
+          <div className="menu__items">
+            <a className="single__item">
+              <img src={infoicon} alt="" />
+              <span>Support & help</span>
+            </a>
+            <a className="single__item">
+              <img src={settingicon} alt="" />
+              <span>My account</span>
+            </a>
+            <a className="single__item">
+              <img src={logouticon} alt="" />
+              <span>Logout</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div className="lower__sidebar">
-        {/* menu items */}
-        <div className="menu__items">
-          <a className="single__item">
-            <img src={infoicon} alt="" />
-            <span>Support & help</span>
-          </a>
-          <a className="single__item">
-            <img src={settingicon} alt="" />
-            <span>My account</span>
-          </a>
-          <a className="single__item">
-            <img src={logouticon} alt="" />
-            <span>Logout</span>
-          </a>
+      {/* responsive sidebar */}
+      <div className="res__sidebar">
+        <div className="res__navbar__left">
+          <div className="res__side__info">
+            <span style={{ color: "#8A8A8A" }}>Welcome 👋</span>
+            <p className="username">Aqib Javid</p>
+          </div>
+          {/* items */}
+          <div className="res__single__item active">
+            <img src={dashboardActive} alt="" />
+            Dashboard
+          </div>
+          <div className="res__single__item">
+            <img src={second} alt="" />
+            Investment funds
+          </div>
+          <div className="res__single__item">
+            <img src={third} alt="" />
+            Invest opportunities
+          </div>
+          <div className="res__single__item">
+            <img src={fourth} alt="" />
+            Investor Management
+          </div>
+          <div className="res__single__item">
+            <img src={fifth} alt="" />
+            Portfolio
+          </div>
+        </div>
+
+        {/* bottom */}
+        <div className="res__navbar__left">
+          {/* items */}
+
+          <div className="res__single__item" style={{ marginTop: "150px" }}>
+            <img src={sixth} alt="" />
+            Support & help
+          </div>
+          <div className="res__single__item">
+            <img src={seventh} alt="" />
+            My account
+          </div>
+          <div className="res__single__item">
+            <img src={eight} alt="" />
+            Logout
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -23,10 +23,10 @@ function App() {
       {/* <SigninPage /> */}
       {/* <RegistrationPage /> */}
       {/* <RegistrationPage2 /> */}
-      <OnboardingPage />
+      {/* <OnboardingPage /> */}
       {/* <RiskPage /> */}
       {/* <RiskAssessmentPage /> */}
-      {/* <Dashboard /> */}
+      <Dashboard />
       {/* <InvestmentFundsPage /> */}
       {/* <InvestedFundsDetails /> */}
       {/* <AddfundPage /> */}
