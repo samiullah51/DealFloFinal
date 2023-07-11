@@ -46,3 +46,11 @@
     display: flex;
     align-items: center;
 }
+
+
+/* responsiveness */
+@media screen and (max-width:600px) {
+    .single__card{
+        margin: 10px 0;
+    }
+    }

@@ -13,15 +13,12 @@ function OppertunityHeader() {
   return (
     <div className="oppertunity__header">
       <h2>Browse Opportunity</h2>
-      <div
-        className="single__form__input"
-        style={{ width: "290px", marginTop: "15px" }}
-      >
+      <div className="single__form__input">
         <label htmlFor="">Browse by Sector</label>
         <div
           className="custom__dropdown"
           onClick={() => setShowList2(!showList2)}
-          style={{ zIndex: "13", marginTop: "5px" }}
+          style={{ zIndex: "13", marginTop: "5px", width: "100%" }}
         >
           <p style={{ color: "#808080" }}>{value2}</p>
           <ExpandMoreOutlinedIcon />
@@ -36,15 +33,12 @@ function OppertunityHeader() {
           )}
         </div>
       </div>
-      <div
-        className="single__form__input"
-        style={{ width: "290px", marginTop: "15px" }}
-      >
+      <div className="single__form__input">
         <label htmlFor="">Browse by Valuation</label>
         <div
           className="custom__dropdown"
           onClick={() => setShowList(!showList)}
-          style={{ zIndex: "1", marginTop: "5px" }}
+          style={{ zIndex: "1", marginTop: "5px", width: "100%" }}
         >
           <p style={{ color: "#808080" }}>{value}</p>
           <ExpandMoreOutlinedIcon />

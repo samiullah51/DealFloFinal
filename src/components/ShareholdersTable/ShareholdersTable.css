@@ -1,6 +1,9 @@
 .share__holder__table{
     padding: 20px;
 }
+.res__share__holder__table{
+    display: none;
+}
 .share__holder__table .table__header{
     width: 100%;
   
@@ -31,3 +34,5 @@ height: 75px;
 .table__header p img{
     margin-right: 10px;
 }
+
+

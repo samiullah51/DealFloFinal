@@ -40,3 +40,12 @@ justify-content: flex-start;
     color: #000000B2;
     margin-top: 10px;
 }
+/* responsive */
+@media screen and (max-width:600px) {
+.founders{
+    flex-direction: column;
+}
+.single__founder{
+    margin: 7px 0;
+}
+}

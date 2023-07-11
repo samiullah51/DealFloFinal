@@ -8,7 +8,7 @@
 }
 .manage__growth__cards .single__manage__growth__card{
     width: 524px;
-    height: 205px;
+height: 205px;
     padding: 19px 15px 19px 15px;
     border: 1px solid #E9EBF8;
     border-radius: 12px;
@@ -78,3 +78,19 @@ font-weight: 600;
     font-size: 16px;
     font-weight: 600;
 }
+
+
+/* responsiveness */
+@media screen and (max-width:600px) {
+    .manage__growth__cards{
+        width: 95vw;
+        padding: 5px;
+    }
+ .single__manage__growth__card{
+    width: 400px;
+    min-height: 240px;
+    
+ }
+
+
+    }

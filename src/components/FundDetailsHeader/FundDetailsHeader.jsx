@@ -50,12 +50,12 @@ function FundDetailsHeader({ type }) {
           )}
         </div>
         {type === "funds" ? (
-          <div style={{ marginRight: "-250px" }}>
-            <InvestedBox title="Amount Invested" amount={`$10,000`} />
+          <div className="res__fund">
+            <InvestedBox title="Minimum Investment" amount={`$10,000`} />
           </div>
         ) : (
           <div>
-            <InvestedBox title="Total Investment" amount={`$584,890`} />
+            <InvestedBox title="Minimum Investment" amount={`$584,890`} />
           </div>
         )}
 

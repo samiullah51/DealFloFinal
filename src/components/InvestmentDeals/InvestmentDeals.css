@@ -20,3 +20,38 @@
     font-weight: 400;
     cursor: pointer;
 }
+.single__form__input .custom__dropdown{
+   
+    width: 213px;
+    height: 20px;
+background-color: #fff;
+    margin-top: 5px;
+}
+/* resonsiveness */
+
+@media screen and (max-width:600px) {
+    .investment__deals{
+        width: 90%;
+    
+        margin: 10px auto;
+        /* margin-left: -20px; */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+    }
+    .single__form__input{
+        width: 100%;
+        margin: 10px 0;
+        border-color: red;
+    }
+  
+    .investment__deals button{
+        width: 100%;
+      margin: 7px auto 0 0;
+
+        align-self: flex-start;
+    }
+  
+
+}

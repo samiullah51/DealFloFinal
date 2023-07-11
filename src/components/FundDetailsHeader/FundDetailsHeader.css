@@ -71,3 +71,32 @@ font-weight: 400;
     cursor: pointer;
     margin-right: 20px;
 }
+.res__fund{
+    margin-right: -250px;
+}
+/* responsiveness */
+@media screen and (max-width:600px) {
+    .fund__header__contents{
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+   .abc__growth span{
+    font-size: 10px;
+    margin-top: -25px;
+    margin-right: -15px;
+   }
+    .fund__header__left{
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .res__fund{
+        margin: 10px 0;
+        align-self: flex-start;
+    }
+    .fund__header__contents button{
+        width: 100%;
+    }
+}

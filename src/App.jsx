@@ -25,7 +25,7 @@ function App() {
       {/* <RegistrationPage2 /> */}
       {/* <OnboardingPage /> */}
       {/* <RiskPage /> */}
-      <RiskAssessmentPage />
+      {/* <RiskAssessmentPage /> */}
       {/* <Dashboard /> */}
       {/* <InvestmentFundsPage /> */}
       {/* <InvestedFundsDetails /> */}
@@ -35,7 +35,7 @@ function App() {
       {/* <InvestmentManagePage /> */}
       {/* <InvestManagementDetails /> */}
       {/* <InvestmentOppertunityPage /> */}
-      {/* <InvestmentOpperDetails /> */}
+      <InvestmentOpperDetails />
     </>
   );
 }

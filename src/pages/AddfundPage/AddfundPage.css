@@ -14,3 +14,8 @@
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+/* responsiveness */
+@media screen and (max-width:600px) {
+
+}

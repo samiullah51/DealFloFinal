@@ -41,3 +41,15 @@
     font-weight: 400;
     margin: 2px 10px;
 }
+
+
+/* responsive */
+@media screen and (max-width:600px) {
+    .latests{
+        flex-direction: column;
+        margin: auto;
+    }
+    .single__latest{
+        margin: 7px 0;
+    }
+    }

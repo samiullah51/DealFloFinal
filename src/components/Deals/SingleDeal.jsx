@@ -36,7 +36,7 @@ function SingleDeal() {
         </div>
         {/* bottom footer */}
         <div className="bottom__footer">
-          <InvestedBox />
+          <InvestedBox amount="$10,000" title="Minimum Investment" />
           <button>Join Fund</button>
         </div>
       </div>

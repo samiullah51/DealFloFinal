@@ -18,12 +18,7 @@ function InvestmentDeals() {
         <div
           className="custom__dropdown"
           onClick={() => setShowList(!showList)}
-          style={{
-            width: "213px",
-            height: "20px",
-            zIndex: 13,
-            marginTop: "5px",
-          }}
+          style={{ zIndex: 222 }}
         >
           <p>{value}</p>
           <ExpandMoreOutlinedIcon />
@@ -45,12 +40,7 @@ function InvestmentDeals() {
         <div
           className="custom__dropdown"
           onClick={() => setShowList2(!showList2)}
-          style={{
-            width: "213px",
-            height: "20px",
-            zIndex: 1,
-            marginTop: "5px",
-          }}
+          style={{ zIndex: 111 }}
         >
           <p>{value2}</p>
           <ExpandMoreOutlinedIcon />
@@ -65,8 +55,8 @@ function InvestmentDeals() {
           )}
         </div>
       </div>
-      <button>Apply</button>
-      <button>+ Create fund</button>
+      <button style={{ marginTop: "20px" }}>Apply</button>
+      <button style={{ marginTop: "10px" }}>+ Create fund</button>
     </div>
   );
 }

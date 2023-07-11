@@ -47,3 +47,30 @@ font-weight: 400;
   padding: 20px;
   
 }
+
+
+/* responsiveness */
+@media screen and (max-width:600px) {
+  .fund__desc{
+    width: 100%;
+  }
+  .sectors{
+    width: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sectors .sector{
+    width: 100%;
+    margin: 5px 0;
+  }
+  .users{
+    flex-direction: column;
+
+  }
+  .users p{
+  width: 100%;
+  margin: 5px 0;
+  text-align: center;
+  }
+}

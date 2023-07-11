@@ -204,3 +204,22 @@ font-size: 16px;
     font-size: 16px;
     font-weight: 400;
 }
+
+/* responsiveness */
+@media screen and (max-width:600px) {
+    .fund__form{
+        width: 90%;
+    }
+   .form__box__input__row{
+    flex-direction: column;
+   }
+   .single__form__input{
+    width: 90%;
+   }
+   .dates{
+    flex-direction: column;
+   }
+   textarea{
+    width: 100px;
+   }
+    }

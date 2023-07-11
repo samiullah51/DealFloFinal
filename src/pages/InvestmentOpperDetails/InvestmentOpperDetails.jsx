@@ -29,7 +29,10 @@ function InvestmentOpperDetails() {
             <button>Invest</button>
           </div>
           {/* contents */}
-          <p style={{ color: "#808080", fontSize: "16px" }}>
+          <p
+            className="res__desc"
+            style={{ color: "#808080", fontSize: "16px" }}
+          >
             TM Technology Inc. is a fast-growing technology startup specializing
             in AI-powered solutions for e-commerce. They have a disruptive
             product and a strong market presence.
@@ -82,8 +85,8 @@ function InvestmentOpperDetails() {
             <div className="chart__stats">Chart is here...</div>
           </div>
           {/* Round Table */}
-          <p className="table__title">TM Technology Inc Valuation Rounds</p>
-          <RoundTable />
+          {/* <p className="table__title">TM Technology Inc Valuation Rounds</p> */}
+          {/* <RoundTable /> */}
 
           {/* Deal cost Chart */}
 
