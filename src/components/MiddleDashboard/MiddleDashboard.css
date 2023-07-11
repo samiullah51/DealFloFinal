@@ -25,3 +25,23 @@
 
 }
 .middle__right::-webkit-scrollbar{display: none;}
+
+/* responsivness */
+@media screen and (max-width:600px) {
+
+    .middle__dashboard{
+        width: 100vw;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .middle__left{
+        width: 90%;
+        margin-bottom: 15px;
+        
+    }
+    .middle__right{
+        width: 90%;
+    
+    }
+}

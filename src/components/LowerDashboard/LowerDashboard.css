@@ -2,7 +2,7 @@
     width: 95%;
     margin: 15px 20px;
     border: 1px solid #E9EBF8;
-    height: 450px;
+    height: 100%;
     border-radius: 12px;
     padding: 20px;
 background-color: #fff;
@@ -12,3 +12,13 @@ background-color: #fff;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;}
+
+
+/* responsivness */
+@media screen and (max-width:600px) {
+  .lower__dashboard{
+    width: 90vw;
+   margin-left: 20px;
+  }
+       
+    }

@@ -16,11 +16,11 @@ function Dashboard() {
         <Navbar />
         {/* contents goes here
         {/* dashboard upper */}
-        {/* <UpperDashboard /> */}
+        <UpperDashboard />
         {/* middle dashboard */}
-        {/* <MiddleDashboard /> */}
+        <MiddleDashboard />
         {/* lower dashboard */}
-        {/* <LowerDashboard />  */}
+        <LowerDashboard />
       </div>
     </div>
   );

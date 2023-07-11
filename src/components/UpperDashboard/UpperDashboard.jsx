@@ -11,7 +11,7 @@ function UpperDashboard() {
           <p style={{ fontWeight: "600", fontSize: "20px" }}>
             Start you journey to financial freedom
           </p>
-          <p style={{ fontSize: "16px", fontWeight: "400", width: "45%" }}>
+          <p className="pp" style={{ fontSize: "16px", fontWeight: "400" }}>
             See a list of investment funds and take decision of investing in it.
           </p>
           <button>See Funds</button>

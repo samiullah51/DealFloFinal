@@ -25,8 +25,8 @@ function App() {
       {/* <RegistrationPage2 /> */}
       {/* <OnboardingPage /> */}
       {/* <RiskPage /> */}
-      {/* <RiskAssessmentPage /> */}
-      <Dashboard />
+      <RiskAssessmentPage />
+      {/* <Dashboard /> */}
       {/* <InvestmentFundsPage /> */}
       {/* <InvestedFundsDetails /> */}
       {/* <AddfundPage /> */}

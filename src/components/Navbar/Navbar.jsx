@@ -1,23 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-import search from "../../assets/search.svg";
+import searchIcon from "../../assets/search.svg";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import profileImage from "../../assets/profileImage.png";
 import burger from "../../assets/burger.svg";
+import { useDispatch, useSelector } from "react-redux";
+import { HIDE__SEARCH, SHOW__SEARCH, SHOW__SIDEBAR } from "../../redux/type";
 function Navbar() {
+  const dispatch = useDispatch();
+  const sidebar = useSelector((state) => state.sidebar);
+  const search = useSelector((state) => state.search);
+  const handleSidebar = () => {
+    dispatch({ type: SHOW__SIDEBAR });
+  };
   return (
     <>
       <div className="navbar">
         {/* navbar left side */}
         <div className="navbar__left">
           <span>Welcome 👋</span>
-          <p className="username">Aqib Javid</p>
+          <p className="username">Aqib Javid </p>
         </div>
         {/* navbar right side */}
         <div className="navbar__right">
           <div className="searchbox">
-            <img src={search} alt="" />
+            <img src={searchIcon} alt="" />
             <input type="text" placeholder="Search any deals" />
           </div>
           {/* notification icon */}
@@ -34,9 +42,25 @@ function Navbar() {
       </div>
       {/* responsive navbar */}
       <div className="navbar__responsive">
+        <div
+          className="search__wrapper"
+          style={{ display: !search ? "none" : "flex" }}
+        >
+          <div className="search__area">
+            <div className="res__search__box">
+              <img src={searchIcon} alt="" />
+              <input type="text" placeholder="Search any deals" />
+            </div>
+          </div>
+          <div
+            className="close__area"
+            onClick={() => dispatch({ type: HIDE__SEARCH })}
+          ></div>
+        </div>
+
         {/* navbar left side */}
         <div className="res__nav__left">
-          <img src={burger} alt="" />
+          <img src={burger} alt="" onClick={handleSidebar} />
           <h2
             style={{
               color: "#6699CC",
@@ -52,7 +76,11 @@ function Navbar() {
         {/* nav right */}
         {/* navbar right side */}
         <div className="res__navbar__right">
-          <img src={search} alt="" />
+          <img
+            src={searchIcon}
+            alt=""
+            onClick={() => dispatch({ type: SHOW__SEARCH })}
+          />
           <div className="res_notify">
             <NotificationsIcon />
             <div className="res__dot">2</div>

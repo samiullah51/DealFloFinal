@@ -6,7 +6,10 @@
     margin: 20px;
 }
 .upper__dashboard .upper__dashboard__left{
-    flex-basis: 75%;
+    flex-basis: 74%;
+}
+.upper__left__banner .pp{
+    width: "45%"
 }
 .upper__dashboard__left .upper__left__banner{
     width: 100%;
@@ -90,6 +93,61 @@
     height: 320px;
    border: 1px solid #E9EBF8;
    border-radius: 15px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   background-color: #fff;
 }
+/* resonsiveness */
+
+@media screen and (max-width:600px) {
+    .upper__dashboard{
+        width: 100vw;
+        flex-direction: column;
+        
+    }
+
+  .upper__dashboard__left{
+    width: 90%;
+  }
+  .upper__left__banner{
+      width: 100%;
+      display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+  }
+  .upper__left__banner p{
+    width: 100%;
+  }
+  .upper__left__banner .pp{
+    width: 100%;
+  }
+  .upper__left__banner button{
+   align-self: flex-end;
+   width: 120px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: -5px;
+   margin-right: -5px;
+
+}
+.upper__dashboard .cards{
+    width: 100%;
+    flex-direction: column;
+}
+.cards .single__card{
+    width: 100%;
+}
+.upper__dashboard__right{
+    width: 90%;
+background-color: red;
+margin-left: 0;
+} 
+.upper__dashboard .upper__dashboard__right h2{
+    width: 100%;
+  margin-left: 100px;
+
+}
+  }
+  

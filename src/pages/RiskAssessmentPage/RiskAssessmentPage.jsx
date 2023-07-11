@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./RiskAssessmentPage.css";
 function RiskAssessmentPage() {
+  const [start, setStart] = useState(false);
   const questions = [
     {
       id: 1,
@@ -54,48 +55,98 @@ function RiskAssessmentPage() {
     }
   };
   return (
-    <div className="risk__assessment__page">
-      {/* risk header */}
-      <div className="risk__header">
-        <h2>Risk Assessment</h2>
-        <p>
-          Please answer the following questions to assess your risk tolerance
-          and investment preferences.
-        </p>
-      </div>
-
-      {/* Question */}
-
-      <div className="questions">
-        <p style={{ fontSize: "20px", color: "#130F26" }}>
-          [Question {index + 1} ]
-        </p>
-        <p className="question">{questions[index].question}</p>
-        {/* options */}
-        <div className="options">
-          <label htmlFor={questions[index].id}>
-            <input type="radio" id={questions[index].id} name="option" />
-            <span>{questions[index].op1}</span>
-          </label>
-          <label htmlFor="op2">
-            <input type="radio" id="op2" name="option" />
-            <span>{questions[index].op2}</span>
-          </label>
-          <label htmlFor="op3">
-            <input type="radio" id="op3" name="option" />
-            <span>{questions[index].op3}</span>
-          </label>
-          <label htmlFor="op4">
-            <input type="radio" id="op4" name="option" />
-            <span>{questions[index].op4}</span>
-          </label>
+    <>
+      <div className="risk__assessment__page">
+        {/* risk header */}
+        <div className="risk__header">
+          <h2>Risk Assessment</h2>
+          <p>
+            Please answer the following questions to assess your risk tolerance
+            and investment preferences.
+          </p>
         </div>
-        {/* button */}
-        <button onClick={handleQuestion}>
-          {index < questions.length - 1 ? "Next" : "Submit"}
-        </button>
+
+        {/* Question */}
+
+        <div className="questions">
+          <p style={{ fontSize: "20px", color: "#130F26" }}>
+            [Question {index + 1} ]
+          </p>
+          <p className="question">{questions[index].question}</p>
+          {/* options */}
+          <div className="options">
+            <label htmlFor={questions[index].id}>
+              <input type="radio" id={questions[index].id} name="option" />
+              <span>{questions[index].op1}</span>
+            </label>
+            <label htmlFor="op2">
+              <input type="radio" id="op2" name="option" />
+              <span>{questions[index].op2}</span>
+            </label>
+            <label htmlFor="op3">
+              <input type="radio" id="op3" name="option" />
+              <span>{questions[index].op3}</span>
+            </label>
+            <label htmlFor="op4">
+              <input type="radio" id="op4" name="option" />
+              <span>{questions[index].op4}</span>
+            </label>
+          </div>
+          {/* button */}
+          <button onClick={handleQuestion}>
+            {index < questions.length - 1 ? "Next" : "Submit"}
+          </button>
+        </div>
       </div>
-    </div>
+      {/* // responsiveness */}
+      <div className="res__risk__assessment__page">
+        {!start ? (
+          <div className="res__ass__start">
+            <h2>Risk Assessment</h2>
+            <p>
+              Please answer the following questions to assess your risk
+              tolerance and investment preferences.
+            </p>
+            <button
+              onClick={() => setStart(true)}
+              style={{ marginTop: "140px" }}
+            >
+              Start
+            </button>
+          </div>
+        ) : (
+          <div className="questions">
+            <p style={{ fontSize: "20px", color: "#130F26" }}>
+              [Question {index + 1} ]
+            </p>
+            <p className="question">{questions[index].question}</p>
+            {/* options */}
+            <div className="options">
+              <label htmlFor={questions[index].id}>
+                <input type="radio" id={questions[index].id} name="option" />
+                <span>{questions[index].op1}</span>
+              </label>
+              <label htmlFor="op2">
+                <input type="radio" id="op2" name="option" />
+                <span>{questions[index].op2}</span>
+              </label>
+              <label htmlFor="op3">
+                <input type="radio" id="op3" name="option" />
+                <span>{questions[index].op3}</span>
+              </label>
+              <label htmlFor="op4">
+                <input type="radio" id="op4" name="option" />
+                <span>{questions[index].op4}</span>
+              </label>
+            </div>
+            {/* button */}
+            <button onClick={handleQuestion}>
+              {index < questions.length - 1 ? "Next" : "Submit"}
+            </button>
+          </div>
+        )}
+      </div>
+    </>
   );
 }
 
