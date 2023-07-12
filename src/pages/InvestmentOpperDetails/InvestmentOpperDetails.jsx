@@ -85,9 +85,8 @@ function InvestmentOpperDetails() {
             <div className="chart__stats">Chart is here...</div>
           </div>
           {/* Round Table */}
-          {/* <p className="table__title">TM Technology Inc Valuation Rounds</p> */}
-          {/* <RoundTable /> */}
-
+          <p className="table__title">TM Technology Inc Valuation Rounds</p>
+          <RoundTable />
           {/* Deal cost Chart */}
 
           {/* funding status chart */}

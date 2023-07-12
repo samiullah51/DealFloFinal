@@ -13,6 +13,7 @@ height: 205px;
     border: 1px solid #E9EBF8;
     border-radius: 12px;
     margin: 12px 0;
+    background-color: #fff;
 }
 .single__manage__growth__card .single__manage__header{
     width: 100%;

@@ -15,10 +15,39 @@ import RiskAssessmentPage from "./pages/RiskAssessmentPage/RiskAssessmentPage";
 import RiskPage from "./pages/RiskPage/RiskPage";
 import RolePage from "./pages/RolePage/RolePage";
 import SigninPage from "./pages/SigninPage/SigninPage";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
+      <Routes>
+        <Route path="/" element={<RolePage />} />
+        <Route path="/signin" element={<SigninPage />} />
+        <Route path="/register" element={<RegistrationPage />} />
+        <Route path="/registerpart2" element={<RegistrationPage2 />} />
+        <Route path="/onboard" element={<OnboardingPage />} />
+        <Route path="/risk" element={<RiskPage />} />
+        <Route path="/riskassessment" element={<RiskAssessmentPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/investfund" element={<InvestmentFundsPage />} />
+        <Route path="/investfunddetails" element={<InvestedFundsDetails />} />
+        <Route path="/addfund" element={<AddfundPage />} />
+        <Route path="/addfundpart2" element={<AddfundPage2 />} />
+        <Route path="/addfundpart3" element={<AddfundPage3 />} />
+        <Route path="/investmanage" element={<InvestmentManagePage />} />
+        <Route
+          path="/investmanagedetails"
+          element={<InvestManagementDetails />}
+        />
+        <Route
+          path="/investoppertunity"
+          element={<InvestmentOppertunityPage />}
+        />
+        <Route
+          path="/investoppertunitydetails"
+          element={<InvestmentOpperDetails />}
+        />
+      </Routes>
       {/* <RolePage /> */}
       {/* <SigninPage /> */}
       {/* <RegistrationPage /> */}
@@ -35,7 +64,7 @@ function App() {
       {/* <InvestmentManagePage /> */}
       {/* <InvestManagementDetails /> */}
       {/* <InvestmentOppertunityPage /> */}
-      <InvestmentOpperDetails />
+      {/* <InvestmentOpperDetails /> */}
     </>
   );
 }

@@ -11,6 +11,7 @@
     width: 340px;
     border-radius: 15px;
     padding: 17px 30px 12px 20px;
+    background-color: #fff;
 }
 .single__card .single__card__header{
     display: flex;
