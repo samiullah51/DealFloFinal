@@ -9,7 +9,7 @@ function InvestmentFundsPage() {
   return (
     <div className="investment__funds__page">
       {/* sidebar */}
-      <Sidebar status="walletAtive" />
+      <Sidebar status="walletActive" />
       {/* contents goes here */}
       <div className="contents">
         {/* Navbar */}

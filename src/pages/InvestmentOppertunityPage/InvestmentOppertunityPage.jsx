@@ -7,7 +7,7 @@ import OppertunityCards from "../../components/OppertunityCards/OppertunityCards
 function InvestmentOppertunityPage() {
   return (
     <div className="investment__oppertunity__page">
-      <Sidebar />
+      <Sidebar status="opperActive" />
       <div className="contents">
         <Navbar />
         {/* Oppertunity header */}

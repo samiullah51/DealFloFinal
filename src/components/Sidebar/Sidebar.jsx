@@ -18,8 +18,12 @@ import fifth from "../../assets/res/fifth.svg";
 import sixth from "../../assets/res/sixth.svg";
 import seventh from "../../assets/res/seventh.svg";
 import eight from "../../assets/res/eight.svg";
+import opper from "../../assets/opper.svg";
+import opperActive from "../../assets/opperActive.svg";
+import workActive from "../../assets/workActive.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { HIDE__SIDEBAR } from "../../redux/type";
+import { NavLink } from "react-router-dom";
 function Sidebar({ status }) {
   const sidebar = useSelector((state) => state.sidebar);
   const dispatch = useDispatch();
@@ -39,7 +43,7 @@ function Sidebar({ status }) {
           </h2>
           {/* menu items */}
           <div className="menu__items">
-            <a className="single__item">
+            <NavLink to="/dashboard" className="single__item">
               <img
                 src={
                   status === "dashboardActive" ? dashboardicon : dashboardActive
@@ -47,45 +51,51 @@ function Sidebar({ status }) {
                 alt=""
               />
               <span>Dashboard</span>
-            </a>
-            <a className="single__item">
+            </NavLink>
+            <NavLink to="/investfund" className="single__item">
               <img
-                src={status === "walletActive" ? investicon : walletActive}
+                src={status === "walletActive" ? walletActive : investicon}
                 alt=""
               />
               <span>Investments Funds</span>
-            </a>
-            <a className="single__item">
-              <img src={investoppericon} alt="" />
+            </NavLink>
+            <NavLink to="/investoppertunity" className="single__item">
+              <img
+                src={status === "opperActive" ? opperActive : opper}
+                alt=""
+              />
               <span>Invest Oppertunities</span>
-            </a>
-            <a className="single__item active">
+            </NavLink>
+            <NavLink to="/investmanage" className="single__item">
               {/* <img src={workicon} alt="" /> */}
-              <img src={investorActive} alt="" />
+              <img
+                src={status === "investActive" ? investorActive : workActive}
+                alt=""
+              />
               <span>Investor Management</span>
-            </a>
-            <a className="single__item">
+            </NavLink>
+            <NavLink to="/portfolio" className="single__item">
               <img src={chart} alt="" />
               <span>Portfolio</span>
-            </a>
+            </NavLink>
           </div>
         </div>
 
         <div className="lower__sidebar">
           {/* menu items */}
           <div className="menu__items">
-            <a className="single__item">
+            <NavLink to="/support" className="single__item">
               <img src={infoicon} alt="" />
               <span>Support & help</span>
-            </a>
-            <a className="single__item">
+            </NavLink>
+            <NavLink to="/account" className="single__item">
               <img src={settingicon} alt="" />
               <span>My account</span>
-            </a>
-            <a className="single__item">
+            </NavLink>
+            <NavLink to="/logout" className="single__item">
               <img src={logouticon} alt="" />
               <span>Logout</span>
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
@@ -102,44 +112,82 @@ function Sidebar({ status }) {
               <p className="username">Aqib Javid</p>
             </div>
             {/* items */}
-            <div className="res__single__item active">
-              <img src={dashboardActive} alt="" />
+            <NavLink
+              to="/dashboard"
+              className="res__single__item"
+              onClick={() => dispatch({ type: HIDE__SIDEBAR })}
+            >
+              <img
+                src={
+                  status !== "dashboardActive" ? dashboardicon : dashboardActive
+                }
+                alt=""
+              />
               Dashboard
-            </div>
-            <div className="res__single__item">
-              <img src={second} alt="" />
+            </NavLink>
+            <NavLink
+              to="/investfund"
+              className="res__single__item"
+              onClick={() => dispatch({ type: HIDE__SIDEBAR })}
+            >
+              <img
+                src={status === "walletActive" ? investicon : walletActive}
+                alt=""
+              />
               Investment funds
-            </div>
-            <div className="res__single__item">
-              <img src={third} alt="" />
+            </NavLink>
+            <NavLink
+              to="/investoppertunity"
+              className="res__single__item"
+              onClick={() => dispatch({ type: HIDE__SIDEBAR })}
+            >
+              <img
+                src={status !== "opperActive" ? opperActive : opper}
+                alt=""
+              />
               Invest opportunities
-            </div>
-            <div className="res__single__item">
-              <img src={fourth} alt="" />
+            </NavLink>
+            <NavLink
+              to="/investmanage"
+              className="res__single__item"
+              onClick={() => dispatch({ type: HIDE__SIDEBAR })}
+            >
+              <img
+                src={status !== "investActive" ? investorActive : workActive}
+                alt=""
+              />
               Investor Management
-            </div>
-            <div className="res__single__item">
+            </NavLink>
+            <NavLink
+              to="/portfolio"
+              className="res__single__item"
+              onClick={() => dispatch({ type: HIDE__SIDEBAR })}
+            >
               <img src={fifth} alt="" />
               Portfolio
-            </div>
+            </NavLink>
           </div>
 
           {/* bottom */}
           <div className="res__navbar__left">
             {/* items */}
 
-            <div className="res__single__item" style={{ marginTop: "28vh" }}>
+            <NavLink
+              className="res__single__item"
+              style={{ marginTop: "28vh" }}
+              to="/support"
+            >
               <img src={sixth} alt="" />
               Support & help
-            </div>
-            <div className="res__single__item">
+            </NavLink>
+            <NavLink className="res__single__item" to="/account">
               <img src={seventh} alt="" />
               My account
-            </div>
-            <div className="res__single__item">
+            </NavLink>
+            <NavLink className="res__single__item" to="/logout">
               <img src={eight} alt="" />
               Logout
-            </div>
+            </NavLink>
           </div>
         </div>
         {/* hider */}

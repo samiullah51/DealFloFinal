@@ -36,6 +36,7 @@
     width: 100%;
     padding: 15px 35px;
     color: #fff;
+    text-decoration: none;
 }
 .single__item span{
     margin-left: 10px;
@@ -115,6 +116,7 @@
     color: #6699CC;
     font-size: 18px;
     font-weight: 400;
+ text-decoration: none;
 }
 .res__single__item.active{
     background-color: #6699CC;

@@ -8,7 +8,7 @@ function InvestmentManagePage() {
   return (
     <div className="investment__manage">
       {/* sidebar */}
-      <Sidebar />
+      <Sidebar status="investActive" />
       <div className="contents">
         <Navbar />
         {/* contents */}
