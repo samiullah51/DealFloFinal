@@ -1,0 +1,63 @@
+.oppertunity__header{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.oppertunity__header h2{
+    width: 50%;
+font-size: 22px;
+font-weight: 500;
+align-self: flex-end;
+}
+.oppertunity__header button{
+    background-color: #6699CC;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 14px 26px 14px 26px;
+    border-radius: 12px;
+    align-self: flex-end;
+}
+.oppertunity__header .single__form__input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 20px;
+}
+.oppertunity__header .single__form__input .custom__dropdown{
+    height: 47px;
+    width: 218px;
+        
+}
+.oppertunity__header .single__form__input{
+width: "290px"; 
+margin-top: "15px" ;
+}
+
+/* responsiveness */
+@media screen and (max-width:600px) {
+.oppertunity__header{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.oppertunity__header h2{
+    width: 100%;
+    align-self: flex-end;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.single__form__input {
+    width: 100%;
+}
+.oppertunity__header button{
+    width: 100%;
+    margin: 10px 0;
+}
+}

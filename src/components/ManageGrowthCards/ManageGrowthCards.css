@@ -1,0 +1,98 @@
+.manage__growth__cards{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.manage__growth__cards .single__manage__growth__card{
+    width: 524px;
+height: 205px;
+    padding: 19px 15px 19px 15px;
+    border: 1px solid #E9EBF8;
+    border-radius: 12px;
+    margin: 12px 0;
+    background-color: #fff;
+    color: inherit;
+}
+.single__manage__growth__card .single__manage__header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #00000021;
+    padding-bottom: 20px;
+}
+
+.single__manage__header .manage__header__left{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.manage__header__left img{
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+.manage__header__left .fund__title{
+    font-size: 20px;
+font-weight: 600;
+}
+.manage__header__left .status{
+    color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+}
+.manage__header__left button{
+  margin-left: auto;
+  border: 1px solid #6699CC;
+  background-color: #6699cc17;
+  padding: 8px 18px 8px 18px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.single__manage__growth__card__footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+.single__manage__growth__card__footer .status{
+    color: #808080;
+    font-size: 12px;
+}
+.single__manage__growth__card__footer .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.manage__card__footer__right{
+    position: relative;
+}
+.manage__card__footer__right p{
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* responsiveness */
+@media screen and (max-width:600px) {
+    .manage__growth__cards{
+        width: 95vw;
+        padding: 5px;
+    }
+ .single__manage__growth__card{
+    width: 400px;
+    min-height: 240px;
+    
+ }
+
+
+    }

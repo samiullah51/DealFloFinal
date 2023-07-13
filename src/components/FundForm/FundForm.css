@@ -1,0 +1,278 @@
+.fund__form{
+    width: 96%;
+    margin: auto;
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 12px;
+}
+.fund__form h1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 25px 0;
+}
+.fund__form .form__box{
+    width: 100%;
+    
+    margin-top: 60px;
+}
+.fund__form .form__box__input__row{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+    width: 94%;
+   margin: auto;
+}
+
+.form__box__input__row .single__form__input{
+    flex-basis: 49%;
+    margin-top: 5px;
+margin-bottom: 15px;
+}
+
+.form__box__input__row .single__form__input .options p{
+    color: #808080;
+}
+.form__box__input__row .single__form__input .custom__dropdown{
+   border: 1px solid #ccc;
+   height: 51px;
+   margin-top: 5px;
+}
+
+.dates{
+    width: 51%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -8px;
+}
+.form__box__input__row .dates input{
+  width: 240px;
+    padding: 14px 19px 14px 19px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #808080;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dates input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+   width: 22px;
+   height: 22px;
+    -webkit-appearance: none;
+}
+
+.form__box__input__row .single__form__input textarea{
+    background-color: #fff;
+    width: 204%;
+    border: 1px solid #D9D9D9;
+    margin-top: 5px;
+}
+.form__box__input__row a{
+    text-align: center;
+    color: #000;
+    width: 100%;
+    border: 1px solid #6699CC;
+    outline: none;
+    cursor: pointer;
+    padding: 17px 0px 17px 0px;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #6699cc2a;
+}
+.form__box__input__row.file{
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #80808080;
+    border-radius: 12px;
+    height: 99px;
+    margin: 25px auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.form__box__input__row.file:hover{
+    background-color: rgb(231, 231, 231);
+}
+.form__box__input__row.file label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.form__box__input__row.file label input{
+    display: none;
+}
+.form__box__input__row .icon__box{
+    flex-basis: 48%;
+    background-color: #F9F9F9;
+    padding: 13px 11px 13px 11px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+.icon__box img{
+    margin-right: 5px;
+}
+.icon__box .title{
+    font-weight: 400;
+    font-size: 14px;
+
+}
+.icon__box .status{
+    color: #808080;
+    font-size: 12px;
+}
+.icon__box .closeicon{
+    align-self: center;
+    margin-left: auto;
+    cursor: pointer;
+}
+.form__box__input__row .row4__inputs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* align-items: baseline; */
+    justify-content: space-between;
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+.row4__inputs .row4__inputbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 10px;
+}
+.row4__inputbox label{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.row4__inputbox input{
+    border: 1px solid #D9D9D9;
+    width: 290px;
+    padding: 16px 0px 16px 23px;
+    border-radius: 12px;
+outline: none;
+font-size: 16px;
+}
+.form__box__input__row .legal__advisor{
+    width: 490px;
+    height: 75px;
+    background-color: #F9F9F9;
+    padding: 18px 23px 18px 23px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+.legal__advisor img{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #F9F9F9;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.legal__advisor .title{
+    font-size: 16px;
+    font-weight: 400;
+}
+.legal__advisor .status{
+    font-size: 12px;
+    color: #808080;
+    font-weight: 400;
+}
+.legal__advisor .email{
+    color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+}
+.form__box__input__row a{
+    width: 160px;
+}
+.form__box__input__row .row4__inputbox .single__form__input{
+    margin: -10 10px 0 0px;
+}
+/* responsiveness */
+@media screen and (max-width:414px) {
+    .fund__form{
+        width: 90%;
+    }
+   .form__box__input__row{
+    flex-direction: column;
+   }
+   .single__form__input{
+    width: 90%;
+   }
+   .dates{
+    flex-direction: column;
+   }
+   textarea{
+    width: 100px;
+   }
+   .dates{
+    width: 100vw;
+  
+    margin: auto;
+    margin-left: -30px;
+    
+   }
+   .form__box__input__row .dates .single__date{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    
+   }
+ .form__box__input__row  .single__date input{
+    /* width: 90vw; */
+    width: 100%;
+    margin: auto;
+   }
+   .single__form__input.legal{
+    margin: auto;
+    margin-right: 105px;
+   }
+.form__box .form__box__input__row textarea{
+    width: 100%;
+   }
+   .form__box__input__row .icon__box{
+    width: 100%;
+   }
+   .form__box__input__row .row4__inputs{
+    flex-direction: column;
+   }
+   .form__box__input__row .legal__advisor{
+    width: 100%;
+   }
+   .form__box__input__row .row4__inputs a{
+    width: 100%;
+   }
+   .form__box__input__row a{
+    width: 100%;
+   }
+   .form__box__input__row .associa{
+   margin-right: auto;
+   margin-bottom: 5px;
+   }
+    }

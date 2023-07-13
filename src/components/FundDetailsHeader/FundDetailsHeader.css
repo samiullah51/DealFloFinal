@@ -1,0 +1,102 @@
+.fund__details__header{
+    width: 93%;
+   padding: 20px;
+ background-color: #fff;
+ margin:20px auto;
+ border-radius: 12px 12px 0 0;
+}
+.fund__details__header .fund__header__contents{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.single__investment__deal__header img{
+    margin-right: 20px;
+}
+.fund__header__contents{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fund__header__contents .fund__header__left{
+    display: flex;
+    align-items: center;
+}
+.fund__header__contents .fund__header__left img{
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+.fund__header__left p{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+.fund__header__contents .abc__growth{
+    display: flex;
+    align-items: center;
+
+}
+.abc__growth span{
+font-size: 12px;
+font-weight: 400;
+    color: #808080;
+    height: 26px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6699cc25;
+    padding: 5px;
+    border-radius: 40px;
+    border: 1px solid #6699CC;
+}
+.fund__header__left .status{
+    color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+}
+.fund__details__header button{
+    border: none;
+    outline: none;
+    background-color: #6699CC;
+    color: #fff;
+    padding: 14px 32px 14px 32px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.res__fund{
+    margin-right: -250px;
+}
+/* responsiveness */
+@media screen and (max-width:600px) {
+    .fund__header__contents{
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+   .abc__growth span{
+    font-size: 10px;
+    margin-top: -25px;
+    margin-right: -15px;
+   }
+    .fund__header__left{
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .res__fund{
+        margin: 10px 0;
+        align-self: flex-start;
+    }
+    .fund__header__contents button{
+        width: 100%;
+    }
+}

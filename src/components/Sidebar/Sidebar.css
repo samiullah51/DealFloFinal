@@ -1,0 +1,130 @@
+.sidebar{
+    flex-basis: 20%;
+    background-color: #6699CC;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.res__sidebar{
+    display: none;
+}
+.sidebar .upper__sidebar, .sidebar .lower__sidebar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.upper__sidebar h2{
+    margin: 50px 0;
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+}
+.sidebar .menu__items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.menu__items .single__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 15px 35px;
+    color: #fff;
+    text-decoration: none;
+}
+.single__item span{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.single__item.active span{
+    font-weight: 500;
+}
+.single__item.active{
+    background-color: #fff;
+    color: #6699CC;
+}
+.single__item:hover{
+    cursor: pointer;
+}
+.sidebar .lower__sidebar{
+    margin-bottom: 40px;
+}
+
+/* responsiveness */
+/* responsiveness */
+@media screen and (max-width:600px) {
+ .sidebar{
+    display: none;
+
+ }
+
+ .res__sidebar{
+  transition: .3s;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  background-color: rgba(155, 155, 155, 0.301);
+  z-index: 122;
+  border-right: 1px solid #ccc;
+  height: 100vh;
+  z-index: 923422;
+
+ }
+.res__sidebar .main__res{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.hider{
+    width: 40%;
+    height: 100vh;
+    background-color: rgba(155, 155, 155, 0.301);
+
+}
+.res__sidebar .res__navbar__left{
+ width: 100%;
+  
+}
+.res__navbar__left .res__side__info{
+    padding: 20px;
+}
+.res__sidebar .res__navbar__left .username
+    {
+        font-weight: 500;
+        font-size: 26px;
+    }
+
+.res__single__item{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #6699CC;
+    font-size: 18px;
+    font-weight: 400;
+ text-decoration: none;
+}
+.res__single__item.active{
+    background-color: #6699CC;
+    color: #fff;
+    font-weight: 500;
+}
+.res__single__item img{
+    margin-right: 10px;
+}
+
+    }

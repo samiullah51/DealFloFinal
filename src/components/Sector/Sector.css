@@ -1,0 +1,12 @@
+.sector{
+    margin-right: 60px;
+}
+.sector .status{
+    color: #808080;
+    font-size: 12px;
+    font-weight: 400;
+}
+.sector .sector__title{
+    font-size: 16px;
+    font-weight: 500;
+}

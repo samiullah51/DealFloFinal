@@ -1,0 +1,35 @@
+.growth__rate__chart{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 11px 55px 11px;
+    border: 1px solid #E9EBF8;
+    border-radius: 15px;
+    height: 383px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.growth__rate__chart.res{
+    display: none;
+}
+.growth__rate__chart .growth__title{
+position: absolute;
+top:0;
+left: 0;
+font-size: 20px;
+font-weight: 600;
+color: #2C2C2C;
+margin: 10px;
+}
+
+
+@media screen and (max-width:600px) {
+.growth__rate__chart{
+    display: none;
+}
+.growth__rate__chart.res{
+    display: flex;
+}
+}

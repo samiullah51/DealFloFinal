@@ -1,0 +1,25 @@
+.lower__dashboard{
+    width: 95%;
+    margin: 15px 20px;
+    border: 1px solid #E9EBF8;
+    height: 100%;
+    border-radius: 12px;
+    padding: 20px;
+background-color: #fff;
+
+}
+.lower__dashboard h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+  }
+
+
+/* responsivness */
+@media screen and (max-width:600px) {
+  .lower__dashboard{
+    width: 90vw;
+   margin-left: 20px;
+  }
+       
+    }

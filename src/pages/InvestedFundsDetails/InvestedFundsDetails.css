@@ -1,0 +1,76 @@
+.invested__funds__details__page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  background-color: #f9f9f9;
+}
+.invested__funds__details__page .contents{
+    flex-basis: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.fund__desc{
+  width: 93%;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 20px;
+}
+.invested__funds__details__page .users{
+  width: 93%;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.users p{
+padding: 10px 16px 10px 16px;
+border-radius: 6px;
+width: 238px;
+height: 34px;
+background-color: #F9F9FA;
+color: #808080;
+font-size: 12px;
+font-weight: 400;
+}
+.invested__funds__details__page .sectors{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  
+}
+
+
+/* responsiveness */
+@media screen and (max-width:600px) {
+  .fund__desc{
+    width: 100%;
+  }
+  .sectors{
+    width: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sectors .sector{
+    width: 100%;
+    margin: 5px 0;
+  }
+  .users{
+    flex-direction: column;
+
+  }
+  .users p{
+  width: 100%;
+  margin: 5px 0;
+  text-align: center;
+  }
+}

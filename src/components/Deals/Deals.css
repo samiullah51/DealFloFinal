@@ -1,0 +1,164 @@
+.deals{
+    width: 93%;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.single__investment__deal{
+    width: 523px;
+    height: 329px;
+    border: 1px solid #E9EBF8;
+    padding: 21px 20px 21px 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+.single__investment__deal__header{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.single__investment__deal .single__investment__deal__header img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.single__investment__deal .info__deal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.info__deal p{
+    margin-right: 30px;
+}
+.single__investment__deal__footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+.single__investment__deal__footer p{
+    width: 187px;
+    background-color: #F9F9FA;
+    color: #808080;padding: 10px 16px 10px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+  margin-right: 20px;
+
+}
+.single__investment__deal .line{
+    width: 100%;
+    height: 1px;
+    background-color: #E9EBF8;
+}
+.deal__bottom{
+    width: 100%;
+}
+.deal__bottom .pdf__word{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.pdf__word .pdf__single__itme{
+    display: flex;
+    margin: 25px 0;
+    margin-right: 20px;
+}
+.pdf__single__itme img{
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+}
+.pdf__single__itme div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -5px;
+}
+.pdf__single__itme p{
+    font-weight: 400;
+    font-size: 14px;
+}
+.pdf__single__itme span{
+    color: #808080;
+    font-size: 12px;
+    font-weight: 400;
+}
+.single__investment__deal .bottom__footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.single__investment__deal .bottom__footer a{
+    width: 135px;
+    height: 47px;
+    padding: 14px 32px 14px 32px;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #6699CC;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.amount__invested{
+    color: #808080;
+    font-size: 12px;
+    font-weight: 400;
+}
+ .amount__price{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* resonsiveness */
+
+@media screen and (max-width:600px) {
+    .deals{
+        flex-direction: column;
+   }
+.single__investment__deal{
+    width: 90vw;
+    height: 100%;
+}
+.days__left{
+    width: 115px;
+}
+
+.single__investment__deal__footer p{
+    margin: 5px 0;
+    width: 155px;
+    font-size: 11px;
+    margin: 0 3px;
+}
+.deal__bottom .bottom__footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.deal__bottom .bottom__footer a{
+   height: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.single__investment__deal__footer{
+    flex-direction: column;
+  
+}
+.single__investment__deal__footer p{
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+}

@@ -1,0 +1,74 @@
+.investment__deals{
+    width: 93%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.investment__deals h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+.investment__deals .creat__fund__btn, .investment__deals button{
+    padding: 14px 26px 14px 26px;
+    border: none;
+    outline: none;
+    background-color: #6699CC;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+
+
+
+}
+.creat__fund__btn {
+    margin-bottom: -10px;
+}
+.single__form__input .custom__dropdown{
+   
+    width: 213px;
+    height: 20px;
+background-color: #fff;
+    margin-top: 5px;
+}
+/* resonsiveness */
+
+@media screen and (max-width:600px) {
+    .investment__deals{
+        width: 90%;
+    
+        margin: 10px auto;
+        /* margin-left: -20px; */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+    }
+    .investment__deals h2{
+        margin-top: -0px;
+    }
+    .single__form__input{
+        width: 100%;
+        margin: 10px 0;
+        border-color: red;
+    }
+  
+    .investment__deals button{
+        width: 100%;
+      margin: 7px auto 0 0;
+
+        align-self: flex-start;
+    }
+  
+    .investment__deals .creat__fund__btn{
+        width: 100%;
+        margin: auto;
+        text-align-last: center;
+    }
+}

@@ -1,0 +1,37 @@
+.share__holder__table{
+    padding: 20px;
+}
+.res__share__holder__table{
+    display: none;
+}
+.share__holder__table .table__header{
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+
+}
+.share__holder__table .table__header:not(:first-child){
+    border-bottom: 1px solid #E9EBF8;
+}
+
+.table__header p{
+    width: 33.33%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    padding: 8px;
+    font-size: 20px;
+
+margin: 0 1px;
+
+height: 75px;
+}
+
+.table__header p img{
+    margin-right: 10px;
+}
+
