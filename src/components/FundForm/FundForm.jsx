@@ -5,6 +5,7 @@ import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
 import ExpandLessOutlinedIcon from "@mui/icons-material/ExpandLessOutlined";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
+import { Link } from "react-router-dom";
 function FundForm() {
   const [showList, setShowList] = useState(false);
   const [showList2, setShowList2] = useState(false);
@@ -70,12 +71,12 @@ function FundForm() {
               <input type="date" value="2017-06-01" />
             </div>
             <div className="single__date">
-              <label htmlFor="">Start Date</label>
+              <label htmlFor="">End Date</label>
               <input type="date" value="2017-06-01" />
             </div>
           </div>
 
-          <div className="single__form__input">
+          <div className="single__form__input legal">
             <label htmlFor="">Legal structure</label>
             <div
               className="custom__dropdown"
@@ -191,7 +192,9 @@ function FundForm() {
         >
           {/* fund name */}
 
-          <button>Next</button>
+          <Link to="/addfundpart2" style={{ width: "100%" }}>
+            Next
+          </Link>
         </div>
       </div>
     </div>

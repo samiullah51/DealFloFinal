@@ -6,9 +6,10 @@ import second from "../../assets/images/second.png";
 import third from "../../assets/images/third.png";
 import fourth from "../../assets/images/fourth.png";
 import fifth from "../../assets/images/fifth.png";
+import { Link } from "react-router-dom";
 function SingleManageGrowthCard() {
   return (
-    <div className="single__manage__growth__card">
+    <Link to="/investmanagedetails" className="single__manage__growth__card">
       <div className="single__manage__header">
         <div className="manage__header__left">
           <img src={trendingup} alt="" />
@@ -37,7 +38,7 @@ function SingleManageGrowthCard() {
           <p>5</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

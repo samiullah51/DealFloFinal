@@ -9,10 +9,14 @@ import wordicon from "../../assets/wordicon.svg";
 import Founders from "../../components/Founders/Founders";
 import RoundTable from "../../components/RoundTable/RoundTable";
 import Latests from "../../components/Latests/Latests";
+import LineChart2 from "../../LineChart2";
+import DoubleLineChart from "../../DoubleLineChart";
+import ResLineChart2 from "../../ResLineChart2";
+import ResDoubleLineChart from "../../ResDoubleLineChart";
 function InvestmentOpperDetails() {
   return (
     <div className="invest__opper__details">
-      <Sidebar />
+      <Sidebar activeStatus="yes" />
       <div className="contents">
         <Navbar />
 
@@ -31,7 +35,7 @@ function InvestmentOpperDetails() {
           {/* contents */}
           <p
             className="res__desc"
-            style={{ color: "#808080", fontSize: "16px" }}
+            style={{ color: "#808080", fontSize: "16px", textAlign: "justify" }}
           >
             TM Technology Inc. is a fast-growing technology startup specializing
             in AI-powered solutions for e-commerce. They have a disruptive
@@ -80,9 +84,17 @@ function InvestmentOpperDetails() {
 
           <Founders />
           {/* funding status chart */}
-          <div className="chart">
+          <div className="chart__fund hide">
             <p className="chart__title">Funding statistics</p>
-            <div className="chart__stats">Chart is here...</div>
+            <div className="chart__stats">
+              <LineChart2 />
+            </div>
+          </div>
+          <div className="res__chart__fund">
+            <p className="chart__title">Funding statistics</p>
+            <div className="chart__stats">
+              <ResLineChart2 />
+            </div>
           </div>
           {/* Round Table */}
           <p className="table__title">TM Technology Inc Valuation Rounds</p>
@@ -90,11 +102,21 @@ function InvestmentOpperDetails() {
           {/* Deal cost Chart */}
 
           {/* funding status chart */}
-          <div className="chart">
+          <div className="chart__fund hide">
             <p className="chart__title" style={{ marginTop: "40px" }}>
               Deal Cost
             </p>
-            <div className="chart__stats">Deal Cost Chart is here...</div>
+            <div className="chart__stats">
+              <DoubleLineChart />
+            </div>
+          </div>
+          <div className="res__chart__fund">
+            <p className="chart__title" style={{ marginTop: "40px" }}>
+              Deal Cost
+            </p>
+            <div className="chart__stats">
+              <ResDoubleLineChart />
+            </div>
           </div>
 
           {/* latest */}

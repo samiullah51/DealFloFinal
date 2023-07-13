@@ -93,15 +93,16 @@ background-color: #ececec;
     left: 90%;
     color: #130F26;
 }
-.single__form__input button{
+.single__form__input .reg__btn{
     width: 100%;
     border: none;
     outline: none;
     border-radius: 12px;
     background-color: #6699CC;
-    padding: 20px 205px 20px 205px;
+    padding: 20px 20px 20px 20px;
     font-size: 16px;
     color: #fff;
     cursor: pointer;
+    text-align: center;
  
 }

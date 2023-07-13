@@ -10,6 +10,7 @@ import pdficon from "../../assets/pdficon.svg";
 import wordicon from "../../assets/wordicon.svg";
 import closeicon from "../../assets/closeicon.svg";
 import IconBox from "./IconBox";
+import { Link } from "react-router-dom";
 function FundForm3() {
   const [showList, setShowList] = useState(false);
   const [showList2, setShowList2] = useState(false);
@@ -87,12 +88,14 @@ function FundForm3() {
         {/* row 3 */}
 
         <div className="form__box__input__row" style={{ margin: "10px auto" }}>
-          <p style={{ fontWeight: "600", fontSize: "20px" }}>
+          <p
+            className="associa"
+            style={{ fontWeight: "600", fontSize: "20px", marginLeft: "9px" }}
+          >
             Contact Associated
           </p>
-          <button
+          <a
             style={{
-              width: "160px",
               height: "45px",
               display: "flex",
               alignItems: "center",
@@ -100,7 +103,7 @@ function FundForm3() {
             }}
           >
             + Add another
-          </button>
+          </a>
         </div>
 
         {/* row 4 */}
@@ -120,7 +123,10 @@ function FundForm3() {
                 <div
                   className="custom__dropdown"
                   onClick={() => setShowList2(!showList2)}
-                  style={{ zIndex: "13" }}
+                  style={{
+                    zIndex: "13",
+                    // margin: "0 10px",
+                  }}
                 >
                   <p style={{ color: "#808080" }}>{value2}</p>
                   <ExpandMoreOutlinedIcon />
@@ -140,7 +146,7 @@ function FundForm3() {
               <label htmlFor="">Email</label>
               <input type="text" placeholder="john.smith@example.com" />
             </div>
-            <button style={{ width: "100px", marginTop: "26px" }}>Add</button>
+            <a style={{ marginTop: "26px" }}>Add</a>
           </div>
 
           {/* button*/}
@@ -165,15 +171,17 @@ function FundForm3() {
 
           {/* fund name */}
 
-          <button
+          <Link
             style={{
               backgroundColor: "#6699CC",
               color: "#fff",
               margin: "10px 0",
+              width: "100%",
             }}
+            to="/investfund"
           >
-            Next
-          </button>
+            Confirm
+          </Link>
         </div>
       </div>
     </div>

@@ -70,7 +70,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 1px solid #D9D9D9;
     margin-top: 5px;
 }
-.form__box__input__row button{
+.form__box__input__row a{
+    text-align: center;
+    color: #000;
     width: 100%;
     border: 1px solid #6699CC;
     outline: none;
@@ -151,6 +153,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    margin: 0 10px;
 }
 .row4__inputbox label{
     font-size: 16px;
@@ -204,9 +207,14 @@ font-size: 16px;
     font-size: 16px;
     font-weight: 400;
 }
-
+.form__box__input__row a{
+    width: 160px;
+}
+.form__box__input__row .row4__inputbox .single__form__input{
+    margin: -10 10px 0 0px;
+}
 /* responsiveness */
-@media screen and (max-width:600px) {
+@media screen and (max-width:414px) {
     .fund__form{
         width: 90%;
     }
@@ -221,5 +229,50 @@ font-size: 16px;
    }
    textarea{
     width: 100px;
+   }
+   .dates{
+    width: 100vw;
+  
+    margin: auto;
+    margin-left: -30px;
+    
+   }
+   .form__box__input__row .dates .single__date{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    
+   }
+ .form__box__input__row  .single__date input{
+    /* width: 90vw; */
+    width: 100%;
+    margin: auto;
+   }
+   .single__form__input.legal{
+    margin: auto;
+    margin-right: 105px;
+   }
+.form__box .form__box__input__row textarea{
+    width: 100%;
+   }
+   .form__box__input__row .icon__box{
+    width: 100%;
+   }
+   .form__box__input__row .row4__inputs{
+    flex-direction: column;
+   }
+   .form__box__input__row .legal__advisor{
+    width: 100%;
+   }
+   .form__box__input__row .row4__inputs a{
+    width: 100%;
+   }
+   .form__box__input__row a{
+    width: 100%;
+   }
+   .form__box__input__row .associa{
+   margin-right: auto;
+   margin-bottom: 5px;
    }
     }

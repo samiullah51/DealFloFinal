@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./RegistrationForm.css";
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
+import { Link } from "react-router-dom";
 function RegistrationForm2() {
   const [showList, setShowList] = useState(false);
   const [value, setValue] = useState("$5 million - $10 million");
@@ -64,13 +65,15 @@ function RegistrationForm2() {
         </div>
         <div className="remember_me" style={{ marginBottom: "-20px" }}>
           <input type="checkbox" />
-          <span style={{ fontWeight: "400" }}>
+          <span style={{ fontWeight: "400", marginLeft: "10px" }}>
             I agree the user agreement and Terms & Condition
           </span>
         </div>
         {/* 6 - Continue Button */}
         <div className="single__form__input">
-          <button style={{ margin: "10px 0" }}>Register</button>
+          <Link to="/onboard" className="reg__btn" style={{ margin: "10px 0" }}>
+            Register
+          </Link>
         </div>
 
         <p
@@ -82,7 +85,9 @@ function RegistrationForm2() {
           }}
         >
           Already have an account?{" "}
-          <span style={{ color: "#6699CC", cursor: "pointer" }}>Login</span>
+          <Link to="/signin" style={{ color: "#6699CC", cursor: "pointer" }}>
+            Login
+          </Link>
         </p>
       </div>
     </div>

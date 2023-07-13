@@ -95,7 +95,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.single__investment__deal .bottom__footer button{
+.single__investment__deal .bottom__footer a{
     width: 135px;
     height: 47px;
     padding: 14px 32px 14px 32px;
@@ -107,6 +107,9 @@
     border: none;
     outline: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .amount__invested{
     color: #808080;
@@ -143,10 +146,19 @@
     align-items: flex-start;
     justify-content: space-between;
 }
-.deal__bottom .bottom__footer button{
+.deal__bottom .bottom__footer a{
    height: 35px;
    display: flex;
    align-items: center;
    justify-content: center;
+}
+.single__investment__deal__footer{
+    flex-direction: column;
+  
+}
+.single__investment__deal__footer p{
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
 }
 }

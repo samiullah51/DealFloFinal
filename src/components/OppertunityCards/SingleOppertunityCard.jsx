@@ -1,8 +1,9 @@
 import React from "react";
 import "./OppertunityCards.css";
+import { Link } from "react-router-dom";
 function SingleOppertunityCard({ image }) {
   return (
-    <div className="single__oppertunity__card">
+    <Link to="/investoppertunitydetails" className="single__oppertunity__card">
       <div className="opper__header">
         <img src={image} alt="" />
         <div>
@@ -31,7 +32,7 @@ function SingleOppertunityCard({ image }) {
         </div>
         <button>Invest</button>
       </div>
-    </div>
+    </Link>
   );
 }
 

@@ -88,6 +88,7 @@
 .upper__dashboard .upper__dashboard__right{
     flex-basis: 25%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 320px;
@@ -95,6 +96,47 @@
    border-radius: 15px;
   /* margin-left: 20px; */
   background-color: #fff;
+  margin-left: 10px;
+}
+.upper__dashboard .upper__dashboard__right h2{
+  position: relative;
+  top: -40px;
+  left: 10px;
+    z-index: 1;
+font-size: 20px;
+font-weight: 600;
+}
+.single__bar__legends{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -20px;
+
+    z-index: 1;
+}
+.single__bar__legends .single__legend{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.single__bar__legends .single__legend div{
+  margin: auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.single__bar__legends .legend__wrapper{
+    display: flex;
+    align-items: center;
+}
+.legend__wrapper span{
+    font-size: 12px;
+    margin-left: 5px;
+    color: rgba(44, 44, 44, 1);
 }
 /* resonsiveness */
 

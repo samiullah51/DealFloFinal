@@ -22,12 +22,19 @@ align-self: flex-end;
     border-radius: 12px;
     align-self: flex-end;
 }
-
+.oppertunity__header .single__form__input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 20px;
+}
 .oppertunity__header .single__form__input .custom__dropdown{
     height: 47px;
     width: 218px;
+        
 }
-.single__form__input{
+.oppertunity__header .single__form__input{
 width: "290px"; 
 margin-top: "15px" ;
 }

@@ -4,6 +4,7 @@ import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
 import ExpandLessOutlinedIcon from "@mui/icons-material/ExpandLessOutlined";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
+import { Link } from "react-router-dom";
 function RegistrationForm() {
   const [showList, setShowList] = useState(false);
   const [showList2, setShowList2] = useState(false);
@@ -94,6 +95,7 @@ function RegistrationForm() {
           <div
             className="custom__dropdown"
             onClick={() => setShowList3(!showList3)}
+            style={{ zIndex: 1 }}
           >
             <p>{value3}</p>
             <ExpandMoreOutlinedIcon />
@@ -139,7 +141,13 @@ function RegistrationForm() {
 
         {/* 6 - Continue Button */}
         <div className="single__form__input">
-          <button style={{ margin: "40px 0" }}>Continue</button>
+          <Link
+            to="/registerpart2"
+            className="reg__button"
+            style={{ margin: "40px 0" }}
+          >
+            Continue
+          </Link>
         </div>
       </div>
     </div>

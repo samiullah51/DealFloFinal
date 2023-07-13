@@ -1,91 +1,126 @@
-
-.select__section .single__input{
+.signin__page{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.signin__left{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.signin__left__header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 10px;
-margin-bottom: 8px;
-width: 100%;
+    margin-left: -50px;
+    margin-bottom: 50px;
 }
-.single__input span{
+.signin__left .signin__left__header h2{
+    font-size: 36px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+}
+.signin__left .signin__left__header p{
+    color: rgba(128, 128, 128, 1);
     font-size: 16px;
-    color: #2C2C2C;
+    margin-top: -20px;
 }
-.single__input input{
-    border: 1px solid #ccc;
-    /* border: none; */
-    outline: none;
-    padding: 20px 20px 20px 24px;
-    border-radius: 12px;
-    width: 100%;
-    margin-top: 5px;
-   
-}
-.single__input.viewPassword{
-    position: relative;
-}
-.single__input.viewPassword .MuiSvgIcon-root{
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    color: #130F26;
-}
-.remember_me{
+.single__login__input{
     display: flex;
-    align-self: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px 0;
+    width: 451px;
+
 }
-.remember_me span{
-    color: #2C2C2C;
-    font-size: 16px;
-    margin-left: 10px;
-}
-.select__section button{
+.single__login__input input{
     width: 100%;
+    background-color: #fff;
+    padding: 20px;
     border: none;
     outline: none;
-    background-color: #6699CC;
-    color: #fff;
-    padding: 20px 205px 20px 205px;
     border-radius: 12px;
-    margin: 15px 0;
-    cursor: pointer;
+}
+.login__form{
+    width: 400px;
+}
+.signin__left .login__form .login__btn{
+    display: block;
+    width: 100%;
+    background-color: rgba(102, 153, 204, 1);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+    
+}
+.single__login__input span{
+    color: rgba(44, 44, 44, 1);
     font-size: 16px;
 }
+.login__form div span{
+color: rgba(44, 44, 44, 1);
+font-size: 16px;
+}
 
-/* responsiveness
+.signin__right{
+    background-color: rgba(222, 242, 252, 1);
+    flex-basis: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signin__right img{
+    width: 600px;
+}
+
+/* responsivness */
 @media screen and (max-width:600px) {
+   .signin__page{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 20px 30px;
+   }
+   .signin__right {
+    display: none;
+   }
 
+   .signin__left .signin__left__header h2{
+    font-size: 28px;
+    margin-left: 25px;
+   
+   }
+   .signin__left .signin__left__header p{
+    margin-left: 25px;
 
-  .role__page.res{
-    width: 90%;
-    margin: auto;
-  }
- .role__page.res .select__section{
+   }
+   .signin__left{
     width: 90vw;
     margin: auto;
- }
- .role__select h2{
-    font-size: 30px;
- }
- .role__select p{
-    font-size: 16px;
- }
- .select__section{
-    width: 200px;
- }
- .select__section .single__input{
-    width: 200px;
-   background-color: red;
-
- }
- .single__input input{
-    width: 100px;
-    margin: auto;
- }
- .select__section button{
-   width: 100%;
-   padding: 10px;
-
- }
-} */
+    margin-left: -20px;
+   }
+   .single__login__input{
+  width: 100%;
+   }
+   .signin__left .login__form .login__btn{
+    width: 100%;
+margin-left: 10px;
+   }
+   .login__form{
+    width: 300px;
+   }
+   .login__form div{
+    margin: 10px;
+   }
+}

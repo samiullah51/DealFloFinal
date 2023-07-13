@@ -1,6 +1,7 @@
 import React from "react";
 import "./RolePage.css";
 import role from "../../assets/role.svg";
+import { Link } from "react-router-dom";
 function RolePage() {
   return (
     <div className="role__page">
@@ -13,15 +14,15 @@ function RolePage() {
           <div className="select__section">
             <label htmlFor="enterpreniuer">
               <input type="radio" id="enterpreniuer" name="role" />
-              Enterpreneur
+              <Link to="/signin">Enterpreneur</Link>
             </label>
             <label htmlFor="investor">
               <input type="radio" id="investor" name="role" />
-              Investor
+              <Link to="/signin">Investor</Link>
             </label>
             <label htmlFor="firm">
-              <input type="radio" id="firm" name="role" />
-              Firm
+              <input type="radio" name="role" />
+              <Link to="/signin">Firm</Link>
             </label>
           </div>
         </div>

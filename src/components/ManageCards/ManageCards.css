@@ -51,7 +51,15 @@
 
 /* responsiveness */
 @media screen and (max-width:600px) {
-    .single__card{
+   .manage__cards .single__card{
         margin: 10px 0;
+    }
+    }
+
+    /* responsiveness */
+@media screen and (max-width:460px) {
+   .manage__cards .single__card{
+        margin: 10px 0;
+        width: 100%;
     }
     }

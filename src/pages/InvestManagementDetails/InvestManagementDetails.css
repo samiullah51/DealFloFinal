@@ -14,13 +14,35 @@
     align-items: flex-start;
     justify-content: flex-start;
 }
-.investment__management__details .contents .chart{
+.investment__management__details .contents .chartTr{
   width: 93%;
-  margin: 20px auto;
+  margin: 0px auto;
   height: 320px;
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   margin-top: -17px;
 }
+h2{
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.res__tri{
+  display: none;
+}
+
+
+/* responsiveness */
+@media screen and (max-width:600px) {
+   .chart{
+display: none;
+   }
+  .res__tri{
+ display: block;
+   }
+  }

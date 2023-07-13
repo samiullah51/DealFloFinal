@@ -35,17 +35,27 @@
    
 }
  .select__section label{
+    text-decoration: none;
     background-color: #6699cc3b;
     width: 100%;
-    padding: 20px 181px 20px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 20px 20px 28px;
     border-radius: 12px;
   border: 1px solid dodgerblue;
   margin: 20px 0;
   cursor: pointer;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-label input{
-    margin-right: 50px;
-   
+.select__section label a{
+    text-align: center;
+    width: 100%;
+    color: #000;
+  text-decoration: none;
 }
 .role__select p{
     font-size: 19px;

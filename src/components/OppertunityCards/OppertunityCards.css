@@ -17,6 +17,7 @@
     height: 268px;
     border-radius: 12px;
     background-color: #fff;
+    color: inherit;
 }
 .single__oppertunity__card .opper__header{
     width: 100%;

@@ -43,3 +43,10 @@
     height: 100%;
  
 }
+
+@media screen and (max-width:600px) {
+    .stiper
+    {
+        width: 90vw;
+    }
+}

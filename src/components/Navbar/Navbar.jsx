@@ -66,8 +66,8 @@ function Navbar() {
               color: "#6699CC",
               fontWeight: "600",
               marginLeft: "15px",
-              marginTop: "-2px",
-              fontSize: "32px",
+              marginTop: "15px",
+              fontSize: "30px",
             }}
           >
             Deal<span style={{ fontWeight: "400" }}>Flo</span>

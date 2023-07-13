@@ -24,7 +24,7 @@ import workActive from "../../assets/workActive.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { HIDE__SIDEBAR } from "../../redux/type";
 import { NavLink } from "react-router-dom";
-function Sidebar({ status }) {
+function Sidebar({ status, activeStatus, activeManageStatus }) {
   const sidebar = useSelector((state) => state.sidebar);
   const dispatch = useDispatch();
 
@@ -59,17 +59,37 @@ function Sidebar({ status }) {
               />
               <span>Investments Funds</span>
             </NavLink>
-            <NavLink to="/investoppertunity" className="single__item">
+            <NavLink
+              to="/investoppertunity"
+              className={
+                activeStatus === "yes" ? "single__item active" : "single__item"
+              }
+            >
               <img
-                src={status === "opperActive" ? opperActive : opper}
+                src={
+                  status === "opperActive" || activeStatus === "yes"
+                    ? opperActive
+                    : opper
+                }
                 alt=""
               />
               <span>Invest Oppertunities</span>
             </NavLink>
-            <NavLink to="/investmanage" className="single__item">
+            <NavLink
+              to="/investmanage"
+              className={
+                activeManageStatus === "yes"
+                  ? "single__item active"
+                  : "single__item"
+              }
+            >
               {/* <img src={workicon} alt="" /> */}
               <img
-                src={status === "investActive" ? investorActive : workActive}
+                src={
+                  status === "investActive" || activeManageStatus === "yes"
+                    ? investorActive
+                    : workActive
+                }
                 alt=""
               />
               <span>Investor Management</span>

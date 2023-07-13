@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./InvestmentDeals.css";
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
+import { Link } from "react-router-dom";
 
 function InvestmentDeals() {
   const [showList, setShowList] = useState(false);
@@ -55,8 +56,24 @@ function InvestmentDeals() {
           )}
         </div>
       </div>
-      <button style={{ marginTop: "20px" }}>Apply</button>
-      <button style={{ marginTop: "10px" }}>+ Create fund</button>
+      <button>Apply</button>
+      <Link
+        to="/addfund"
+        className="creat__fund__btn"
+        style={{
+          marginTop: "10px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <span
+          style={{ fontSize: "20px", marginRight: "5px", marginBottom: "1px" }}
+        >
+          +
+        </span>{" "}
+        Create fund
+      </Link>
     </div>
   );
 }

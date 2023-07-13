@@ -10,6 +10,7 @@ import pdficon from "../../assets/pdficon.svg";
 import wordicon from "../../assets/wordicon.svg";
 import closeicon from "../../assets/closeicon.svg";
 import IconBox from "./IconBox";
+import { Link } from "react-router-dom";
 function FundForm2() {
   const [showList, setShowList] = useState(false);
   const [showList2, setShowList2] = useState(false);
@@ -127,7 +128,9 @@ function FundForm2() {
         >
           {/* fund name */}
 
-          <button>Next</button>
+          <Link to="/addfundpart3" style={{ width: "100%" }}>
+            Next
+          </Link>
         </div>
       </div>
     </div>

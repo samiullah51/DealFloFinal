@@ -5,6 +5,7 @@ import wordicon from "../../assets/wordicon.svg";
 import dealicon2 from "../../assets/dealicon2.svg";
 import Dealheader from "./Dealheader";
 import InvestedBox from "./InvestedBox";
+import { Link } from "react-router-dom";
 function SingleDeal() {
   return (
     <div className="single__investment__deal">
@@ -37,7 +38,7 @@ function SingleDeal() {
         {/* bottom footer */}
         <div className="bottom__footer">
           <InvestedBox amount="$10,000" title="Minimum Investment" />
-          <button>Join Fund</button>
+          <Link to="/investfunddetails">Join Fund</Link>
         </div>
       </div>
     </div>

@@ -3,10 +3,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+width: 100vw;
+height: 100vh;
 
 }
 .risk__page img{
-    width: 800px;
+    width: 700px;
     height: 500px;
     margin-bottom: 10px;
     margin-top: 0px;
@@ -22,18 +24,20 @@
     font-size: 20px;
 }
 .risk__page .btns{
-    margin: 10px 0;
+    margin: 30px 0;
+    margin-bottom: 40px;
 }
-.risk__page .btns button{
+.risk__page .btns a{
     border: 2px solid #6699CC;
     outline: none;
     width: 137px;
     border-radius: 12px;
-    padding:  15px 20px;
+    padding:  13px 30px;
     margin: 20px;
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
+    text-align: center;
 }
 .btns .skip{
     color: #6699CC;
@@ -46,7 +50,7 @@
 /* responsiveness */
 @media screen and (max-width:600px) {
     .risk__page{
-        justify-content: flex-start;
+        justify-content: center;
         height: 100vh;
         overflow: hidden;
         margin-top: -100px;
@@ -55,9 +59,11 @@
     width: 400px;
  }
  .risk__page h2{
+    width: 100%;
     font-size: 32px;
     font-weight: 500;
     margin-top: -120px;
+    text-align: center;
  }
  .risk__page p{
     width: 90%;
@@ -66,13 +72,13 @@
  .risk__page .btns{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     width: 88vw;
     margin: auto;
     margin-top: 10px;
  }
- .risk__page .btns button{
+ .risk__page .btns a{
 width: 100%;
 margin: 10px auto;
  }

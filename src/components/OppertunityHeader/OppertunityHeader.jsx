@@ -18,7 +18,11 @@ function OppertunityHeader() {
         <div
           className="custom__dropdown"
           onClick={() => setShowList2(!showList2)}
-          style={{ zIndex: "13", marginTop: "5px", width: "100%" }}
+          style={{
+            zIndex: "13",
+            marginTop: "5px",
+            width: "100%",
+          }}
         >
           <p style={{ color: "#808080" }}>{value2}</p>
           <ExpandMoreOutlinedIcon />
@@ -38,7 +42,11 @@ function OppertunityHeader() {
         <div
           className="custom__dropdown"
           onClick={() => setShowList(!showList)}
-          style={{ zIndex: "1", marginTop: "5px", width: "100%" }}
+          style={{
+            zIndex: "1",
+            marginTop: "5px",
+            width: "100%",
+          }}
         >
           <p style={{ color: "#808080" }}>{value}</p>
           <ExpandMoreOutlinedIcon />
@@ -54,7 +62,9 @@ function OppertunityHeader() {
         </div>
       </div>
       {/* button */}
-      <button>Apply</button>
+      <button style={{ marginBottom: "16px", marginLeft: "50px" }}>
+        Apply
+      </button>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./RiskAssessmentPage.css";
+import { Link } from "react-router-dom";
 function RiskAssessmentPage() {
   const [start, setStart] = useState(false);
   const questions = [
@@ -93,9 +94,16 @@ function RiskAssessmentPage() {
             </label>
           </div>
           {/* button */}
-          <button onClick={handleQuestion}>
-            {index < questions.length - 1 ? "Next" : "Submit"}
-          </button>
+
+          {index < questions.length - 1 ? (
+            <button className="assess__btn" onClick={handleQuestion}>
+              Next
+            </button>
+          ) : (
+            <Link className="assess__btn" to="/dashboard">
+              Submit
+            </Link>
+          )}
         </div>
       </div>
       {/* // responsiveness */}
@@ -140,9 +148,16 @@ function RiskAssessmentPage() {
               </label>
             </div>
             {/* button */}
-            <button onClick={handleQuestion}>
-              {index < questions.length - 1 ? "Next" : "Submit"}
-            </button>
+
+            {index < questions.length - 1 ? (
+              <button className="assess__btn" onClick={handleQuestion}>
+                Next
+              </button>
+            ) : (
+              <Link className="assess__btn" to="/dashboard">
+                Submit
+              </Link>
+            )}
           </div>
         )}
       </div>

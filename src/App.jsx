@@ -1,3 +1,7 @@
+import Chartt from "./AssetAllocationChart";
+import BarChart from "./BarChart";
+import DoubleLineChart from "./DoubleLineChart";
+import LineChart from "./LineChart";
 import AddfundPage from "./pages/AddfundPage/AddfundPage";
 import AddfundPage2 from "./pages/AddfundPage/AddfundPage2";
 import AddfundPage3 from "./pages/AddfundPage/AddfundPage3";
@@ -48,23 +52,6 @@ function App() {
           element={<InvestmentOpperDetails />}
         />
       </Routes>
-      {/* <RolePage /> */}
-      {/* <SigninPage /> */}
-      {/* <RegistrationPage /> */}
-      {/* <RegistrationPage2 /> */}
-      {/* <OnboardingPage /> */}
-      {/* <RiskPage /> */}
-      {/* <RiskAssessmentPage /> */}
-      {/* <Dashboard /> */}
-      {/* <InvestmentFundsPage /> */}
-      {/* <InvestedFundsDetails /> */}
-      {/* <AddfundPage /> */}
-      {/* <AddfundPage2 /> */}
-      {/* <AddfundPage3 /> */}
-      {/* <InvestmentManagePage /> */}
-      {/* <InvestManagementDetails /> */}
-      {/* <InvestmentOppertunityPage /> */}
-      {/* <InvestmentOpperDetails /> */}
     </>
   );
 }

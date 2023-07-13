@@ -11,6 +11,9 @@
     margin-bottom: 100px;
     position: relative;
 }
+.growth__rate__chart.res{
+    display: none;
+}
 .growth__rate__chart .growth__title{
 position: absolute;
 top:0;
@@ -19,4 +22,14 @@ font-size: 20px;
 font-weight: 600;
 color: #2C2C2C;
 margin: 10px;
+}
+
+
+@media screen and (max-width:600px) {
+.growth__rate__chart{
+    display: none;
+}
+.growth__rate__chart.res{
+    display: flex;
+}
 }

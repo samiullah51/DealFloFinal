@@ -5,10 +5,14 @@ import Navbar from "../../components/Navbar/Navbar";
 import FundDetailsHeader from "../../components/FundDetailsHeader/FundDetailsHeader";
 import ShareholdersTable from "../../components/ShareholdersTable/ShareholdersTable";
 import InvestmentRountTable from "../../components/InvestmentRountTable/InvestmentRountTable";
+import SharesChart from "../../SharesChart";
+import DoubleLineChart from "../../DoubleLineChart";
+import TripleLineChart from "../../TripleLineChart";
+import ResTripleLineChart from "../../ResTripleLineChart";
 function InvestManagementDetails() {
   return (
     <div className="investment__management__details">
-      <Sidebar />
+      <Sidebar activeManageStatus="yes" />
 
       <div className="contents">
         <Navbar />
@@ -19,10 +23,12 @@ function InvestManagementDetails() {
         <p
           className="fund__desc"
           style={{
-            width: "93%",
+            width: "90%",
             margin: "auto",
             marginTop: "-60px",
             backgroundColor: "#fff",
+            zIndex: "1",
+            textAlign: "justify",
           }}
         >
           A high-growth equity fund focused on technology startups. Our
@@ -35,8 +41,16 @@ function InvestManagementDetails() {
         </p>
 
         {/* chart will go here... */}
-        <div className="chart">
-          <h2>Circle chat is here...</h2>
+        <div
+          className="chart"
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <SharesChart />
         </div>
 
         <div
@@ -46,6 +60,7 @@ function InvestManagementDetails() {
             margin: "auto",
             backgroundColor: "#fff",
             marginTop: "-20px",
+            zIndex: "1",
           }}
         >
           {/* share holder table */}
@@ -54,8 +69,13 @@ function InvestManagementDetails() {
           <InvestmentRountTable title="Company investment rounds" />
           {/* activities fund chart goes here */}
           {/* chart will go here... */}
-          <div className="chart">
-            <h2>Activity funds chart goes here...</h2>
+          <div className="chart" style={{ marginBottom: "100px" }}>
+            <h2>Activities Within the Fund</h2>
+            <TripleLineChart />
+          </div>
+          <div className="res__tri" style={{ marginBottom: "100px" }}>
+            <h2>Activities Within the Fund</h2>
+            <ResTripleLineChart />
           </div>
         </div>
       </div>
