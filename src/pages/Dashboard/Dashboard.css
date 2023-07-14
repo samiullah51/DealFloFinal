@@ -4,7 +4,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-  background-color: #f9f9f9;
 }
 .dashboard .contents{
     flex-basis: 80%;
@@ -15,3 +14,24 @@
     justify-content: flex-start;
 }
 
+@media screen and (max-width:600px) {
+  .dashboard .contents{
+    flex-basis: 100%;
+  } 
+  }
+
+
+/* @media screen and (max-width:1180px) {
+  .navbar{
+    width: 100%;
+  }
+}@media screen and (max-width:1164px) {
+  .navbar{
+    width: 100%;
+  }
+}
+@media screen and (max-width:980px) {
+  .navbar{
+    width: 100%;
+  }
+} */

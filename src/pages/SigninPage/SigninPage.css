@@ -83,8 +83,55 @@ font-size: 16px;
     width: 600px;
 }
 
+
+
 /* responsivness */
-@media screen and (max-width:600px) {
+@media screen and (max-width:912px) {
+    .signin__page{
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 100vw;
+     padding: 20px 30px;
+    }
+    .signin__right {
+     display: none;
+    }
+ 
+    .signin__left .signin__left__header h2{
+     font-size: 28px;
+     margin-left: 25px;
+    
+    }
+    .signin__left .signin__left__header p{
+     margin-left: 25px;
+ 
+    }
+    .signin__left{
+     width: 90vw;
+     margin: auto;
+     margin-left: -20px;
+    }
+    .single__login__input{
+   width: 100%;
+    }
+    .signin__left .login__form .login__btn{
+     width: 100%;
+ margin-left: 10px;
+    }
+    .login__form{
+     width: 300px;
+    }
+    .login__form div{
+     margin: 10px;
+    }
+ }
+
+
+
+
+/* responsivness */
+@media screen and (max-width:368px) {
    .signin__page{
     flex-direction: column;
     align-items: center;
@@ -97,7 +144,7 @@ font-size: 16px;
    }
 
    .signin__left .signin__left__header h2{
-    font-size: 28px;
+    font-size: 22px;
     margin-left: 25px;
    
    }
@@ -111,10 +158,10 @@ font-size: 16px;
     margin-left: -20px;
    }
    .single__login__input{
-  width: 100%;
+  width: 90%;
    }
    .signin__left .login__form .login__btn{
-    width: 100%;
+    width: 90%;
 margin-left: 10px;
    }
    .login__form{
@@ -124,3 +171,47 @@ margin-left: 10px;
     margin: 10px;
    }
 }
+
+
+/* responsivness */
+@media screen and (max-width:290px) {
+    .signin__page{
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 100vw;
+     padding: 20px 30px;
+    }
+    .signin__right {
+     display: none;
+    }
+ 
+    .signin__left .signin__left__header h2{
+     font-size: 22px;
+     margin-left: 30px;
+    
+    }
+    .signin__left .signin__left__header p{
+     margin-left: 30px;
+ 
+    }
+    .signin__left{
+     width: 90vw;
+     margin: auto;
+     margin-left: 0px;
+    }
+    .single__login__input{
+   width: 90%;
+    }
+    .signin__left .login__form .login__btn{
+     width: 90%;
+ margin-left: 10px;
+    }
+    .login__form{
+     width: 90vw;
+     margin: auto;
+    }
+    .login__form div{
+     margin: 10px;
+    }
+ }

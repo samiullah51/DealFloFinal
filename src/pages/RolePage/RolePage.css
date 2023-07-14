@@ -74,6 +74,37 @@
     height: 500px;
 }
 
+
+/* 890 */
+@media screen and (max-width:890px) {
+    .role__page{
+        flex-direction: column;
+    }
+    .role__select h2{
+        font-size: 32px;
+      margin-left: 20px;
+       margin-top: 40px;
+    }
+    .role__select p{
+      margin-left: 20px;
+
+    }
+    .role__left{
+        width: 100%;
+    }
+     .select__section label{
+       width: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        margin: 15px 0;
+    }
+    .role__right img{
+        display: none;
+    }
+    
+}
+
 @media screen and (max-width:600px) {
     .role__page{
         flex-direction: column;
