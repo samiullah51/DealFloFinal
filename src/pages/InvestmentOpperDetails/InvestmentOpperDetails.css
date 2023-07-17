@@ -7,7 +7,7 @@
   background-color: #f9f9f9;
 }
 .invest__opper__details .contents{
-    flex-basis: 80%;
+    flex-basis: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -15,9 +15,9 @@
     justify-content: flex-start;
 }
 .invest__opper__details .contents__body{
-    width: 93%;
-    margin: 25px auto;
-    background-color: #fff;
+    width: 100%;
+    margin-right: auto;
+    background-color: #ffffff;
     border-radius: 12px 12px 0 0;
     padding: 13px;
 }
@@ -80,18 +80,19 @@ margin: 5px 0;
     font-size: 20px;
     font-weight: 600;
 }
-.contents__body .chart__fund .chart__stats{
-width: 100%;
-height: 338px;
-display: flex;
-align-items: center;
-justify-content: center;
-}
+
 .res__chart__fund{
   display: none;
 }
 /* responsive */
-@media screen and (max-width:600px) {
+
+
+
+@media screen and (max-width:912px) {
+    .invest__opper__details .contents__body{
+        width: 100vw;
+        padding: 20px;
+    }
 .opper__details__header{
     width: 90%;
     /* flex-direction: column; */

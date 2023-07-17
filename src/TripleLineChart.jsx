@@ -68,7 +68,7 @@ const TripleLineChart = () => {
 
   return (
     <div>
-      <canvas ref={chartRef} width="900" height="240"></canvas>
+      <canvas ref={chartRef} width="700" height="240"></canvas>
     </div>
   );
 };

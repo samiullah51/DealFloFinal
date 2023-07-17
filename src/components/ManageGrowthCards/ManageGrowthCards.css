@@ -82,6 +82,22 @@ font-weight: 600;
 }
 
 
+
+/* responsive */
+@media screen and (max-width:1415px) {
+    .manage__growth__cards .single__manage__growth__card{
+      width: 49%;
+    }
+  
+  }
+  
+/* responsive */
+@media screen and (max-width:609px) {
+    .manage__growth__cards .single__manage__growth__card{
+      width: 100%;
+    }
+  
+  }
 /* responsiveness */
 @media screen and (max-width:600px) {
     .manage__growth__cards{

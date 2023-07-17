@@ -1,5 +1,5 @@
 .fund__form{
-    width: 96%;
+    width: 93%;
     margin: auto;
     background-color: #fff;
     margin: 40px auto;
@@ -214,6 +214,23 @@ font-size: 16px;
     margin: -10 10px 0 0px;
 }
 /* responsiveness */
+
+@media screen and (max-width:912px) {
+.form__box__input__row .row4__inputs{
+    flex-direction: column;
+}
+.form__box__input__row .row4__inputs .row4__inputbox{
+    width: 100%;
+}
+
+.form__box__input__row .row4__inputs .row4__inputbox input{
+    width: 100%;
+}
+.form__box__input__row .row4__inputs .row4__inputbox .single__form__input{
+    width: 100%;
+}
+}
+
 @media screen and (max-width:414px) {
     .fund__form{
         width: 90%;

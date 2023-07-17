@@ -11,6 +11,7 @@ function Navbar() {
   const dispatch = useDispatch();
   const sidebar = useSelector((state) => state.sidebar);
   const search = useSelector((state) => state.search);
+  const [showProfile, setShowProfile] = useState(false);
   const handleSidebar = () => {
     dispatch({ type: SHOW__SIDEBAR });
   };
@@ -34,9 +35,19 @@ function Navbar() {
             <div className="dot">2</div>
           </div>
           {/* profile */}
-          <div className="profile__info">
+          <div
+            className="profile__info"
+            onClick={() => setShowProfile(!showProfile)}
+          >
             <img src={profileImage} alt="" />
             <ExpandMoreIcon />
+            {showProfile && (
+              <div className="show__profile__modal">
+                <p>Profile</p>
+                <p>Setting</p>
+                <p>Logout</p>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -85,9 +96,19 @@ function Navbar() {
             <NotificationsIcon />
             <div className="res__dot">2</div>
           </div>
-          <div className="res__profile__info">
+          <div
+            className="res__profile__info"
+            onClick={() => setShowProfile(!showProfile)}
+          >
             <img src={profileImage} alt="" />
             <ExpandMoreIcon />
+            {showProfile && (
+              <div className="show__profile__modal">
+                <p>Profile</p>
+                <p>Setting</p>
+                <p>Logout</p>
+              </div>
+            )}
           </div>
         </div>
       </div>

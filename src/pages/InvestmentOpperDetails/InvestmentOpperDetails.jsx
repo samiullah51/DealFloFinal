@@ -35,7 +35,12 @@ function InvestmentOpperDetails() {
           {/* contents */}
           <p
             className="res__desc"
-            style={{ color: "#808080", fontSize: "16px", textAlign: "justify" }}
+            style={{
+              color: "#808080",
+              width: "100%",
+              fontSize: "16px",
+              textAlign: "justify",
+            }}
           >
             TM Technology Inc. is a fast-growing technology startup specializing
             in AI-powered solutions for e-commerce. They have a disruptive
@@ -86,18 +91,20 @@ function InvestmentOpperDetails() {
           {/* funding status chart */}
           <div className="chart__fund hide">
             <p className="chart__title">Funding statistics</p>
-            <div className="chart__stats">
-              <LineChart2 />
-            </div>
+
+            <LineChart2 />
           </div>
           <div className="res__chart__fund">
             <p className="chart__title">Funding statistics</p>
             <div className="chart__stats">
-              <ResLineChart2 />
+              {/* <ResLineChart2 /> */}
+              <LineChart2 />
             </div>
           </div>
           {/* Round Table */}
-          <p className="table__title">TM Technology Inc Valuation Rounds</p>
+          <p className="table__title" style={{ marginTop: "50px" }}>
+            TM Technology Inc Valuation Rounds
+          </p>
           <RoundTable />
           {/* Deal cost Chart */}
 
@@ -106,21 +113,23 @@ function InvestmentOpperDetails() {
             <p className="chart__title" style={{ marginTop: "40px" }}>
               Deal Cost
             </p>
-            <div className="chart__stats">
-              <DoubleLineChart />
-            </div>
+
+            <DoubleLineChart />
           </div>
           <div className="res__chart__fund">
             <p className="chart__title" style={{ marginTop: "40px" }}>
               Deal Cost
             </p>
             <div className="chart__stats">
-              <ResDoubleLineChart />
+              {/* <ResDoubleLineChart /> */}
+              <DoubleLineChart />
             </div>
           </div>
 
           {/* latest */}
-          <p className="table__title">Latest Updates and News</p>
+          <p className="table__title" style={{ marginTop: "30px" }}>
+            Latest Updates and News
+          </p>
           <Latests />
         </div>
       </div>

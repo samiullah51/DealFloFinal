@@ -39,7 +39,7 @@ background-color: #fff;
 }
 /* resonsiveness */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:912px) {
     .investment__deals{
         width: 90%;
     

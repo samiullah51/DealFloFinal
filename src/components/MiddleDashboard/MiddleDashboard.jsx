@@ -12,7 +12,8 @@ function MiddleDashboard() {
       </div>
       <div className="middle__left__res" style={{ backgroundColor: "#fff" }}>
         <h2>Investment Performance</h2>
-        <ResLineChart />
+        {/* <ResLineChart /> */}
+        <LineChart />
       </div>
       <div className="middle__right" style={{ backgroundColor: "#fff" }}>
         {/* recommended Deals */}

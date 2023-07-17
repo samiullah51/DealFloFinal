@@ -75,8 +75,8 @@ const ResLineChart2 = () => {
   }, []);
 
   return (
-    <div>
-      <canvas ref={chartRef} width="300" height="300px"></canvas>
+    <div style={{ width: "100%", height: "100px" }}>
+      <canvas ref={chartRef} width="100px" height="100px"></canvas>
     </div>
   );
 };
