@@ -6,8 +6,8 @@
    justify-content: space-between;
    background-color: #fff;
    position: sticky;
-   top: 0;
-   z-index: 999;
+   top: 0px;
+   z-index: 9919;
 }
 .navbar__responsive{
     display: none;
@@ -107,23 +107,6 @@
 .show__profile__modal p .MuiSvgIcon-root{
     margin-right: 7px;
 }
-/* responsiveness */
-
-/* @media screen and (max-width:1166px) {
-    .navbar .navbar__right .searchbox{
-        width: 550px;
-    }
-}
-@media screen and (max-width:1066px) {
-    .navbar .navbar__right .searchbox{
-        width: 450px;
-    }
-}
-@media screen and (max-width:966px) {
-    .navbar .navbar__right .searchbox{
-        width: 400px;
-    }
-} */
 
 @media screen and (max-width:912px) {
 .navbar{

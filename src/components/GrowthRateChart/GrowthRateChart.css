@@ -25,7 +25,7 @@ margin: 10px;
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:912px) {
 .growth__rate__chart{
     display: none;
 }

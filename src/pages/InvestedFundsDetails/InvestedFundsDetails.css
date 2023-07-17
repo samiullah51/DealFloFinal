@@ -53,6 +53,8 @@ font-weight: 400;
 @media screen and (max-width:912px) {
   .invested__funds__details__page{
   }
+  .invested__funds__details__page .contents{
+  }
   .fund__desc{
     width: 100%;
   }

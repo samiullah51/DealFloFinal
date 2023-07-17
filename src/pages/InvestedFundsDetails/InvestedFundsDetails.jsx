@@ -30,7 +30,7 @@ function InvestedFundsDetails() {
         >
           <p
             className="fund__desc"
-            style={{ textAlign: "justify", width: "90%" }}
+            style={{ textAlign: "justify", width: "100%" }}
           >
             A high-growth equity fund focused on technology startups. Our
             high-growth equity fund is dedicated to supporting technology
