@@ -28,7 +28,10 @@ function InvestedFundsDetails() {
             marginTop: "-40px",
           }}
         >
-          <p className="fund__desc" style={{ textAlign: "justify" }}>
+          <p
+            className="fund__desc"
+            style={{ textAlign: "justify", width: "90%" }}
+          >
             A high-growth equity fund focused on technology startups. Our
             high-growth equity fund is dedicated to supporting technology
             startups on their path to success. With a focus on cutting-edge

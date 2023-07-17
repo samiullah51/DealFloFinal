@@ -86,8 +86,8 @@
 .show__profile__modal{
     position: absolute;
     top: 46px;
-    left: 0;
-    width: 120%;
+    right: 0px;
+    width: 200px;
    height: fit-content;
     padding: 10px;
     box-shadow: 0 0 9px 1px rgba(0,0,0,0.1);
@@ -98,6 +98,14 @@
 .show__profile__modal p {
     padding: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.show__profile__modal p .MuiSvgIcon-root{
+    margin-right: 7px;
 }
 /* responsiveness */
 
@@ -218,9 +226,9 @@ align-items: center;
 }
 .show__profile__modal{
     position: absolute;
-    top: 51px;
-    left: 0;
-    width: 120%;
+    top: 55px;
+    right: 0px;
+    width: 200px;
    height: fit-content;
     padding: 10px;
     box-shadow: 0 0 9px 1px rgba(0,0,0,0.1);

@@ -7,6 +7,9 @@ import profileImage from "../../assets/profileImage.png";
 import burger from "../../assets/burger.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { HIDE__SEARCH, SHOW__SEARCH, SHOW__SIDEBAR } from "../../redux/type";
+import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
+import LockRoundedIcon from "@mui/icons-material/LockRounded";
+import LogoutIcon from "@mui/icons-material/Logout";
 function Navbar() {
   const dispatch = useDispatch();
   const sidebar = useSelector((state) => state.sidebar);
@@ -43,9 +46,20 @@ function Navbar() {
             <ExpandMoreIcon />
             {showProfile && (
               <div className="show__profile__modal">
-                <p>Profile</p>
-                <p>Setting</p>
-                <p>Logout</p>
+                <p>
+                  {" "}
+                  <PersonRoundedIcon />
+                  Edit profile
+                </p>
+                <p>
+                  {" "}
+                  <LockRoundedIcon />
+                  Change password
+                </p>
+                <p>
+                  {" "}
+                  <LogoutIcon /> Logout
+                </p>
               </div>
             )}
           </div>
@@ -104,9 +118,20 @@ function Navbar() {
             <ExpandMoreIcon />
             {showProfile && (
               <div className="show__profile__modal">
-                <p>Profile</p>
-                <p>Setting</p>
-                <p>Logout</p>
+                <p>
+                  {" "}
+                  <PersonRoundedIcon />
+                  Edit profile
+                </p>
+                <p>
+                  {" "}
+                  <LockRoundedIcon />
+                  Change password
+                </p>
+                <p>
+                  {" "}
+                  <LogoutIcon /> Logout
+                </p>
               </div>
             )}
           </div>

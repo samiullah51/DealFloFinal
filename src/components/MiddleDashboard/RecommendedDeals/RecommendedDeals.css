@@ -1,4 +1,19 @@
 
+.recommended__deals{
+    flex-basis: 50%;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #0000001a;
+    height: 100%;
+    overflow-y: scroll;
+    z-index: 1;
+    background-color: #fff;
+    
+
+}
+.recommended__deals::-webkit-scrollbar{
+    display: none;
+}
 .recommended__deals h2{
     font-size: 20px;
     font-weight: 600;
@@ -80,7 +95,17 @@
     font-weight: 400;
 }
 
+.recommended__deals  h2{
+    margin-top: -15px;
+      }
+@media screen and (max-width:912px) {
+  .recommended__deals{
+    width: 90%;
+    /* margin-top: 40px; */
+    min-height: 100%;
+  }
+  .recommended__deals .single__deal{
+    width: 100%;
+  }
 
-@media screen and (max-width:600px) {
-.recommended__deals{}
 }

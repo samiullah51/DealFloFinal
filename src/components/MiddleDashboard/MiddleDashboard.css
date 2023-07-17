@@ -17,18 +17,13 @@
     justify-content: center;
     margin-right: 5px;
 }
+
 .middle__left__res{
  
     display: none;
 
 }
-.middle__left h2{
-    margin-right: auto;
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: -20px;
-}
+
 .middle__dashboard .middle__right{
     flex-basis: 49%;
     height: 400px;
@@ -64,7 +59,12 @@
         display: block;
         width: 90%;
         padding: 10px;
-      
+    border: 1px solid #E9EBF8;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .middle__left__res h2{
+        margin-top: -10px;
     }
     .middle__right{
         width: 90%;

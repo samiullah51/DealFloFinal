@@ -162,7 +162,7 @@ cursor: pointer;
        }
     }
 /* responsivness */
-@media screen and (max-width:607px) {
+@media screen and (max-width:912px) {
 .recent__transactions{
     width: 90vw;
     flex-direction: column;

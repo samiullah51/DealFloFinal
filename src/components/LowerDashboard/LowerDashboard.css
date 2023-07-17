@@ -16,10 +16,11 @@ background-color: #fff;
 
 
 /* responsivness */
-@media screen and (max-width:600px) {
+@media screen and (max-width:609px) {
   .lower__dashboard{
     width: 90vw;
    margin-left: 20px;
+   margin-top: 400px;
   }
        
     }
