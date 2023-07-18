@@ -55,7 +55,7 @@
 }
 .days__left{
     padding: 6px 14px 6px 14px;
-    width: fit-content;
+    width: 84px;
     height: 24px;
     border: 1px solid #6699CC;
     border-radius: 40px;
@@ -94,7 +94,15 @@
     font-size: 14px;
     font-weight: 400;
 }
-
+@media screen and (max-width:1765px) {
+    .recommended__deals{
+        width: 100%;
+    }
+    .days__left{
+        width: 115px;
+        font-size: 10px;
+    }
+}
 .recommended__deals  h2{
     margin-top: -15px;
       }
