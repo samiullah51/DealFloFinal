@@ -10,6 +10,7 @@ import { HIDE__SEARCH, SHOW__SEARCH, SHOW__SIDEBAR } from "../../redux/type";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import LockRoundedIcon from "@mui/icons-material/LockRounded";
 import LogoutIcon from "@mui/icons-material/Logout";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 function Navbar() {
   const dispatch = useDispatch();
   const sidebar = useSelector((state) => state.sidebar);
@@ -55,6 +56,11 @@ function Navbar() {
                   {" "}
                   <LockRoundedIcon />
                   Change password
+                </p>
+                <p>
+                  {" "}
+                  <SettingsOutlinedIcon />
+                  My account
                 </p>
                 <p>
                   {" "}
@@ -127,6 +133,11 @@ function Navbar() {
                   {" "}
                   <LockRoundedIcon />
                   Change password
+                </p>
+                <p>
+                  {" "}
+                  <SettingsOutlinedIcon />
+                  My account
                 </p>
                 <p>
                   {" "}

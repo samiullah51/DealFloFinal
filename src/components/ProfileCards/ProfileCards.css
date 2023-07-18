@@ -1,0 +1,68 @@
+.profile__cards{
+    margin: 10px auto;
+    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.profile__cards .single__profile__card{
+    width: 32%;
+ border: 1px solid rgba(233, 235, 248, 1);
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.single__profile__card__header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.single__profile__card__header img{
+    margin-right: 7px;
+}
+.single__profile__card__header .profile__card__title{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(44, 44, 44, 1);
+}
+.single__profile__card__footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.single__profile__card__footer .profile__card__value{
+    color: rgba(0, 0, 0, 1);
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.single__profile__card__footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.single__profile__card__footer div img{
+    margin-right: 15px;
+}
+.single__profile__card__footer div span{
+    font-size: 14px;
+}
+
+
+@media screen and (max-width:1370px) {
+.profile__cards .single__profile__card{
+width: 48%;
+}
+}
+@media screen and (max-width:688px) {
+    .profile__cards .single__profile__card{
+    width: 100%;
+    }
+    }

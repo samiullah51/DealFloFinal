@@ -21,10 +21,17 @@ import eight from "../../assets/res/eight.svg";
 import opper from "../../assets/opper.svg";
 import opperActive from "../../assets/opperActive.svg";
 import workActive from "../../assets/workActive.svg";
+import ActivePortfolio from "../../assets/ActivePortfolio.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { HIDE__SIDEBAR } from "../../redux/type";
 import { NavLink } from "react-router-dom";
-function Sidebar({ status, activeStatus, activeManageStatus }) {
+
+function Sidebar({
+  status,
+  activeStatus,
+  activeManageStatus,
+  activePortStatus,
+}) {
   const sidebar = useSelector((state) => state.sidebar);
   const dispatch = useDispatch();
 
@@ -94,27 +101,23 @@ function Sidebar({ status, activeStatus, activeManageStatus }) {
               />
               <span>Investor Management</span>
             </NavLink>
-            <NavLink to="/portfolio" className="single__item">
-              <img src={chart} alt="" />
+            <NavLink
+              to="/portfolio"
+              className={
+                status === "ActivePortfolio"
+                  ? "single__item active"
+                  : "single__item"
+              }
+            >
+              <img
+                src={
+                  status === "ActivePortfolio" || activePortStatus === "yes"
+                    ? ActivePortfolio
+                    : chart
+                }
+                alt=""
+              />
               <span>Portfolio</span>
-            </NavLink>
-          </div>
-        </div>
-
-        <div className="lower__sidebar">
-          {/* menu items */}
-          <div className="menu__items">
-            <NavLink to="/support" className="single__item">
-              <img src={infoicon} alt="" />
-              <span>Support & help</span>
-            </NavLink>
-            <NavLink to="/account" className="single__item">
-              <img src={settingicon} alt="" />
-              <span>My account</span>
-            </NavLink>
-            <NavLink to="/logout" className="single__item">
-              <img src={logouticon} alt="" />
-              <span>Logout</span>
             </NavLink>
           </div>
         </div>
@@ -183,30 +186,11 @@ function Sidebar({ status, activeStatus, activeManageStatus }) {
               className="res__single__item"
               onClick={() => dispatch({ type: HIDE__SIDEBAR })}
             >
-              <img src={fifth} alt="" />
+              <img
+                src={status !== "ActivePortfolio" ? ActivePortfolio : chart}
+                alt=""
+              />
               Portfolio
-            </NavLink>
-          </div>
-
-          {/* bottom */}
-          <div className="res__navbar__left">
-            {/* items */}
-
-            <NavLink
-              className="res__single__item"
-              style={{ marginTop: "28vh" }}
-              to="/support"
-            >
-              <img src={sixth} alt="" />
-              Support & help
-            </NavLink>
-            <NavLink className="res__single__item" to="/account">
-              <img src={seventh} alt="" />
-              My account
-            </NavLink>
-            <NavLink className="res__single__item" to="/logout">
-              <img src={eight} alt="" />
-              Logout
             </NavLink>
           </div>
         </div>
