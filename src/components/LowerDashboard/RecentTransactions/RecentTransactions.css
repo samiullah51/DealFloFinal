@@ -83,7 +83,7 @@ cursor: pointer;
 
         
 /* responsivness */
-@media screen and (max-width:1152px) {
+@media screen and (max-width:1385px) {
     .recent__transactions{
         width: 90vw;
         /* flex-direction: column; */
@@ -92,7 +92,7 @@ cursor: pointer;
         padding: 0;
     }
     .single__transaction{
-        width: 450px;
+        width: 48%;
         margin: 8px auto;
         align-items: flex-start;
         justify-content: flex-start;
