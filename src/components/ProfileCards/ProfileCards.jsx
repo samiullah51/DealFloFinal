@@ -16,7 +16,7 @@ function ProfileCards() {
       <SingleProfileCard
         icon={fundicon}
         title="Current portfolio value"
-        value="$$220,500"
+        value="$220,500"
         type="decrease"
         trendValue="-9.75"
       />

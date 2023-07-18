@@ -56,10 +56,14 @@
 }
 
 
-@media screen and (max-width:1370px) {
+@media screen and (max-width:1390px) {
 .profile__cards .single__profile__card{
-width: 48%;
+width: 33%;
 }
+@media screen and (max-width:977px) {
+    .profile__cards .single__profile__card{
+    width: 48%;
+    }
 }
 @media screen and (max-width:688px) {
     .profile__cards .single__profile__card{
