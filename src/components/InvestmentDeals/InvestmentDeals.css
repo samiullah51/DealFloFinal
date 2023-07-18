@@ -38,7 +38,11 @@ background-color: #fff;
     margin-top: 5px;
 }
 /* resonsiveness */
-
+@media screen and (max-width:1400px) {
+  .investment__deals .single__form__input label{
+    font-size: 12px;
+  }
+}
 @media screen and (max-width:912px) {
     .investment__deals{
         width: 90%;
