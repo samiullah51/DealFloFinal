@@ -22,7 +22,7 @@ function PortfolioDetails() {
               <span>Type: Venture capital</span>
             </div>
           </div>
-          <p>
+          <p style={{ textAlign: "justify" }}>
             A high-growth equity fund focused on technology startups. Our
             high-growth equity fund is dedicated to supporting technology
             startups on their path to success. With a focus on cutting-edge
