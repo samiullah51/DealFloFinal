@@ -13,16 +13,23 @@ function RolePage() {
           {/* selection section */}
           <div className="select__section">
             <label htmlFor="enterpreniuer">
-              <input type="radio" id="enterpreniuer" name="role" />
-              <Link to="/signin">Enterpreneur</Link>
+              <Link to="/signin">
+                {" "}
+                <input type="radio" id="enterpreniuer" name="role" />{" "}
+                <span>Enterpreneur</span>
+              </Link>
             </label>
             <label htmlFor="investor">
-              <input type="radio" id="investor" name="role" />
-              <Link to="/signin">Investor</Link>
+              <Link to="/signin">
+                <input type="radio" id="investor" name="role" />
+                <span>Investor</span>
+              </Link>
             </label>
             <label htmlFor="firm">
-              <input type="radio" name="role" />
-              <Link to="/signin">Firm</Link>
+              <Link to="/signin">
+                <input type="radio" name="role" />
+                <span>Firm</span>
+              </Link>
             </label>
           </div>
         </div>
