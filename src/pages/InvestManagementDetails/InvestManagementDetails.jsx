@@ -23,7 +23,11 @@ function InvestManagementDetails() {
         <p
           className="fund__desc"
           style={{
+<<<<<<< HEAD
             width: "93%",
+=======
+            width: "90%",
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
             margin: "auto",
             marginTop: "-60px",
             backgroundColor: "#fff",
@@ -44,12 +48,19 @@ function InvestManagementDetails() {
         <div
           className="chart"
           style={{
+<<<<<<< HEAD
             width: "93%",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             backgroundColor: "#fff",
             margin: "auto",
+=======
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
           }}
         >
           <SharesChart />

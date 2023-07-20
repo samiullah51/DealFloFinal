@@ -3,7 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+<<<<<<< HEAD
     margin: 40px 0 40px 20px;
+=======
+    margin: 20px 0 40px 20px;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 }
 .latests .single__latest{
     width: 327px;

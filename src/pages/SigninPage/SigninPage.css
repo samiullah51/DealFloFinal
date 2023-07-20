@@ -83,6 +83,7 @@ font-size: 16px;
     width: 600px;
 }
 
+<<<<<<< HEAD
 
 
 /* responsivness */
@@ -132,6 +133,10 @@ font-size: 16px;
 
 /* responsivness */
 @media screen and (max-width:368px) {
+=======
+/* responsivness */
+@media screen and (max-width:600px) {
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
    .signin__page{
     flex-direction: column;
     align-items: center;
@@ -144,7 +149,11 @@ font-size: 16px;
    }
 
    .signin__left .signin__left__header h2{
+<<<<<<< HEAD
     font-size: 22px;
+=======
+    font-size: 28px;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
     margin-left: 25px;
    
    }
@@ -158,10 +167,17 @@ font-size: 16px;
     margin-left: -20px;
    }
    .single__login__input{
+<<<<<<< HEAD
   width: 90%;
    }
    .signin__left .login__form .login__btn{
     width: 90%;
+=======
+  width: 100%;
+   }
+   .signin__left .login__form .login__btn{
+    width: 100%;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 margin-left: 10px;
    }
    .login__form{
@@ -170,6 +186,7 @@ margin-left: 10px;
    .login__form div{
     margin: 10px;
    }
+<<<<<<< HEAD
 }
 
 
@@ -215,3 +232,6 @@ margin-left: 10px;
      margin: 10px;
     }
  }
+=======
+}
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a

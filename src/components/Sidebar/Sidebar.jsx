@@ -21,6 +21,7 @@ import eight from "../../assets/res/eight.svg";
 import opper from "../../assets/opper.svg";
 import opperActive from "../../assets/opperActive.svg";
 import workActive from "../../assets/workActive.svg";
+<<<<<<< HEAD
 import ActivePortfolio from "../../assets/ActivePortfolio.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { HIDE__SIDEBAR } from "../../redux/type";
@@ -35,6 +36,12 @@ function Sidebar({
   activePortDetails,
   addFundStatus,
 }) {
+=======
+import { useDispatch, useSelector } from "react-redux";
+import { HIDE__SIDEBAR } from "../../redux/type";
+import { NavLink } from "react-router-dom";
+function Sidebar({ status, activeStatus, activeManageStatus }) {
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
   const sidebar = useSelector((state) => state.sidebar);
   const dispatch = useDispatch();
 
@@ -62,6 +69,7 @@ function Sidebar({
               />
               <span>Dashboard</span>
             </NavLink>
+<<<<<<< HEAD
             <NavLink
               to="/investfund"
               className={
@@ -78,6 +86,11 @@ function Sidebar({
                     ? walletActive
                     : investicon
                 }
+=======
+            <NavLink to="/investfund" className="single__item">
+              <img
+                src={status === "walletActive" ? walletActive : investicon}
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
                 alt=""
               />
               <span>Investments Funds</span>
@@ -117,6 +130,7 @@ function Sidebar({
               />
               <span>Investor Management</span>
             </NavLink>
+<<<<<<< HEAD
             <NavLink
               to="/portfolio"
               className={
@@ -133,10 +147,35 @@ function Sidebar({
                 }
                 alt=""
               />
+=======
+            <NavLink to="/portfolio" className="single__item">
+              <img src={chart} alt="" />
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
               <span>Portfolio</span>
             </NavLink>
           </div>
         </div>
+<<<<<<< HEAD
+=======
+
+        <div className="lower__sidebar">
+          {/* menu items */}
+          <div className="menu__items">
+            <NavLink to="/support" className="single__item">
+              <img src={infoicon} alt="" />
+              <span>Support & help</span>
+            </NavLink>
+            <NavLink to="/account" className="single__item">
+              <img src={settingicon} alt="" />
+              <span>My account</span>
+            </NavLink>
+            <NavLink to="/logout" className="single__item">
+              <img src={logouticon} alt="" />
+              <span>Logout</span>
+            </NavLink>
+          </div>
+        </div>
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
       </div>
 
       {/* responsive sidebar */}
@@ -202,6 +241,7 @@ function Sidebar({
               className="res__single__item"
               onClick={() => dispatch({ type: HIDE__SIDEBAR })}
             >
+<<<<<<< HEAD
               <img
                 src={status !== "ActivePortfolio" ? ActivePortfolio : chart}
                 alt=""
@@ -209,6 +249,34 @@ function Sidebar({
               Portfolio
             </NavLink>
           </div>
+=======
+              <img src={fifth} alt="" />
+              Portfolio
+            </NavLink>
+          </div>
+
+          {/* bottom */}
+          <div className="res__navbar__left">
+            {/* items */}
+
+            <NavLink
+              className="res__single__item"
+              style={{ marginTop: "28vh" }}
+              to="/support"
+            >
+              <img src={sixth} alt="" />
+              Support & help
+            </NavLink>
+            <NavLink className="res__single__item" to="/account">
+              <img src={seventh} alt="" />
+              My account
+            </NavLink>
+            <NavLink className="res__single__item" to="/logout">
+              <img src={eight} alt="" />
+              Logout
+            </NavLink>
+          </div>
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
         </div>
         {/* hider */}
         <div className="hider" onClick={hideSidebar}></div>

@@ -7,15 +7,21 @@ import profileImage from "../../assets/profileImage.png";
 import burger from "../../assets/burger.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { HIDE__SEARCH, SHOW__SEARCH, SHOW__SIDEBAR } from "../../redux/type";
+<<<<<<< HEAD
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import LockRoundedIcon from "@mui/icons-material/LockRounded";
 import LogoutIcon from "@mui/icons-material/Logout";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+=======
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 function Navbar() {
   const dispatch = useDispatch();
   const sidebar = useSelector((state) => state.sidebar);
   const search = useSelector((state) => state.search);
+<<<<<<< HEAD
   const [showProfile, setShowProfile] = useState(false);
+=======
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
   const handleSidebar = () => {
     dispatch({ type: SHOW__SIDEBAR });
   };
@@ -39,6 +45,7 @@ function Navbar() {
             <div className="dot">2</div>
           </div>
           {/* profile */}
+<<<<<<< HEAD
           <div
             className="profile__info"
             onClick={() => setShowProfile(!showProfile)}
@@ -68,6 +75,11 @@ function Navbar() {
                 </p>
               </div>
             )}
+=======
+          <div className="profile__info">
+            <img src={profileImage} alt="" />
+            <ExpandMoreIcon />
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
           </div>
         </div>
       </div>
@@ -116,6 +128,7 @@ function Navbar() {
             <NotificationsIcon />
             <div className="res__dot">2</div>
           </div>
+<<<<<<< HEAD
           <div
             className="res__profile__info"
             onClick={() => setShowProfile(!showProfile)}
@@ -145,6 +158,11 @@ function Navbar() {
                 </p>
               </div>
             )}
+=======
+          <div className="res__profile__info">
+            <img src={profileImage} alt="" />
+            <ExpandMoreIcon />
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
           </div>
         </div>
       </div>

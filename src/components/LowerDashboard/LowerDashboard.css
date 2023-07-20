@@ -16,11 +16,18 @@ background-color: #fff;
 
 
 /* responsivness */
+<<<<<<< HEAD
 @media screen and (max-width:609px) {
   .lower__dashboard{
     width: 90vw;
    margin-left: 20px;
    margin-top: 400px;
+=======
+@media screen and (max-width:600px) {
+  .lower__dashboard{
+    width: 90vw;
+   margin-left: 20px;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
   }
        
     }

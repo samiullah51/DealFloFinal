@@ -7,13 +7,21 @@
     flex-wrap: wrap;
 }
 .single__investment__deal{
+<<<<<<< HEAD
     width: 48%;
+=======
+    width: 523px;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
     height: 329px;
     border: 1px solid #E9EBF8;
     padding: 21px 20px 21px 20px;
     border-radius: 12px;
     background-color: #fff;
+<<<<<<< HEAD
     margin: 10px;
+=======
+    margin: 10px 0;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 }
 .single__investment__deal__header{
     width: 100%;
@@ -123,6 +131,7 @@
 
 /* resonsiveness */
 
+<<<<<<< HEAD
 @media screen and (max-width:1360px) {
     .deals{
         /* flex-direction: column; */
@@ -130,6 +139,14 @@
    }
 .single__investment__deal{
     width: 470px;
+=======
+@media screen and (max-width:600px) {
+    .deals{
+        flex-direction: column;
+   }
+.single__investment__deal{
+    width: 90vw;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
     height: 100%;
 }
 .days__left{
@@ -162,6 +179,7 @@
     text-align: center;
     margin: 5px 0;
 }
+<<<<<<< HEAD
 }
 @media screen and (max-width:1325px) {
     .deals{
@@ -273,3 +291,6 @@
 .days__left{
     width: 115px;
 }}
+=======
+}
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a

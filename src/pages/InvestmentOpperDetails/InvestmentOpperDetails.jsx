@@ -35,12 +35,16 @@ function InvestmentOpperDetails() {
           {/* contents */}
           <p
             className="res__desc"
+<<<<<<< HEAD
             style={{
               color: "#808080",
               width: "100%",
               fontSize: "16px",
               textAlign: "justify",
             }}
+=======
+            style={{ color: "#808080", fontSize: "16px", textAlign: "justify" }}
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
           >
             TM Technology Inc. is a fast-growing technology startup specializing
             in AI-powered solutions for e-commerce. They have a disruptive
@@ -91,12 +95,19 @@ function InvestmentOpperDetails() {
           {/* funding status chart */}
           <div className="chart__fund hide">
             <p className="chart__title">Funding statistics</p>
+<<<<<<< HEAD
 
             <LineChart2 />
+=======
+            <div className="chart__stats">
+              <LineChart2 />
+            </div>
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
           </div>
           <div className="res__chart__fund">
             <p className="chart__title">Funding statistics</p>
             <div className="chart__stats">
+<<<<<<< HEAD
               {/* <ResLineChart2 /> */}
               <LineChart2 />
             </div>
@@ -105,6 +116,13 @@ function InvestmentOpperDetails() {
           <p className="table__title" style={{ marginTop: "50px" }}>
             TM Technology Inc Valuation Rounds
           </p>
+=======
+              <ResLineChart2 />
+            </div>
+          </div>
+          {/* Round Table */}
+          <p className="table__title">TM Technology Inc Valuation Rounds</p>
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
           <RoundTable />
           {/* Deal cost Chart */}
 
@@ -113,23 +131,37 @@ function InvestmentOpperDetails() {
             <p className="chart__title" style={{ marginTop: "40px" }}>
               Deal Cost
             </p>
+<<<<<<< HEAD
 
             <DoubleLineChart />
+=======
+            <div className="chart__stats">
+              <DoubleLineChart />
+            </div>
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
           </div>
           <div className="res__chart__fund">
             <p className="chart__title" style={{ marginTop: "40px" }}>
               Deal Cost
             </p>
             <div className="chart__stats">
+<<<<<<< HEAD
               {/* <ResDoubleLineChart /> */}
               <DoubleLineChart />
+=======
+              <ResDoubleLineChart />
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
             </div>
           </div>
 
           {/* latest */}
+<<<<<<< HEAD
           <p className="table__title" style={{ marginTop: "30px" }}>
             Latest Updates and News
           </p>
+=======
+          <p className="table__title">Latest Updates and News</p>
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
           <Latests />
         </div>
       </div>

@@ -3,7 +3,11 @@
   line-height: 1.5;
   font-weight: 400;
 
+<<<<<<< HEAD
   /* color-scheme: light dark; */
+=======
+  color-scheme: light dark;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

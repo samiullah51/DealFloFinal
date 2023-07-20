@@ -20,7 +20,11 @@ function AssetAllocationChart() {
     <div className="App" style={{ marginTop: "-100px" }}>
       <Chart
         chartType="PieChart"
+<<<<<<< HEAD
         width="250px"
+=======
+        width="90%"
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
         height="300px"
         data={data}
         options={options}

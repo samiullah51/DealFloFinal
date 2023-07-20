@@ -13,6 +13,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+<<<<<<< HEAD
 }
 
 
@@ -20,4 +21,6 @@
 .investment__funds__page .contents{
   flex-basis: 100%;
 } 
+=======
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 }

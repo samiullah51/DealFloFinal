@@ -112,7 +112,11 @@ font-weight: 600;
     align-items: center;
     justify-content: space-between;
     margin-top: -20px;
+<<<<<<< HEAD
     padding-bottom: 20px;
+=======
+
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
     z-index: 1;
 }
 .single__bar__legends .single__legend{
@@ -181,9 +185,16 @@ font-weight: 600;
 .cards .single__card{
     width: 100%;
 }
+<<<<<<< HEAD
 .upper__dashboard .upper__dashboard__right{
     width: 90%;
 margin-left: -0px;
+=======
+.upper__dashboard__right{
+    width: 90%;
+background-color: red;
+margin-left: 0;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 } 
 .upper__dashboard .upper__dashboard__right h2{
     width: 100%;

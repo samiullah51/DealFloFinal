@@ -72,6 +72,7 @@ margin: 20px 0;
 }
 
 /* responsive */
+<<<<<<< HEAD
 @media screen and (max-width:1367px) {
   .oppertunity__cards .single__oppertunity__card{
     width: 49%;
@@ -80,6 +81,8 @@ margin: 20px 0;
 }
 
 
+=======
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 @media screen and (max-width:600px) {
     .oppertunity__cards{
         width: 100vw;

@@ -5,7 +5,10 @@
     align-items: flex-start;
     justify-content: space-between;
   background-color: #f9f9f9;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 }
 .investment__oppertunity__page .contents{
     flex-basis: 80%;
@@ -14,5 +17,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a

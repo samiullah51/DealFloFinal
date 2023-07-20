@@ -38,12 +38,16 @@ align-self: flex-end;
 width: "290px"; 
 margin-top: "15px" ;
 }
+<<<<<<< HEAD
 /* resonsiveness */
 @media screen and (max-width:1400px) {
     .oppertunity__header .single__form__input label{
       font-size: 12px;
     }
   }
+=======
+
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 /* responsiveness */
 @media screen and (max-width:600px) {
 .oppertunity__header{

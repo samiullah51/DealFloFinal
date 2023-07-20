@@ -1,5 +1,9 @@
 .fund__form{
+<<<<<<< HEAD
     width: 93%;
+=======
+    width: 96%;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
     margin: auto;
     background-color: #fff;
     margin: 40px auto;
@@ -214,6 +218,7 @@ font-size: 16px;
     margin: -10 10px 0 0px;
 }
 /* responsiveness */
+<<<<<<< HEAD
 
 @media screen and (max-width:912px) {
 .form__box__input__row .row4__inputs{
@@ -231,6 +236,8 @@ font-size: 16px;
 }
 }
 
+=======
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 @media screen and (max-width:414px) {
     .fund__form{
         width: 90%;

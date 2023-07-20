@@ -69,6 +69,7 @@ justify-content: center;
 }
 
 /* responsiveness */
+<<<<<<< HEAD
 
 /* responsiveness */
 @media screen and (max-width:1134px) {
@@ -155,6 +156,8 @@ justify-content: center;
 
 
 
+=======
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 @media screen and (max-width:600px) {
     .risk__assessment__page{
         display: none;

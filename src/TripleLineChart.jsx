@@ -68,7 +68,11 @@ const TripleLineChart = () => {
 
   return (
     <div>
+<<<<<<< HEAD
       <canvas ref={chartRef} width="700" height="240"></canvas>
+=======
+      <canvas ref={chartRef} width="900" height="240"></canvas>
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
     </div>
   );
 };

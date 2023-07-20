@@ -82,6 +82,7 @@ font-weight: 600;
 }
 
 
+<<<<<<< HEAD
 
 /* responsive */
 @media screen and (max-width:1415px) {
@@ -98,6 +99,8 @@ font-weight: 600;
     }
   
   }
+=======
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 /* responsiveness */
 @media screen and (max-width:600px) {
     .manage__growth__cards{

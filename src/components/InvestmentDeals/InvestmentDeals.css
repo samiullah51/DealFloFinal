@@ -38,12 +38,17 @@ background-color: #fff;
     margin-top: 5px;
 }
 /* resonsiveness */
+<<<<<<< HEAD
 @media screen and (max-width:1400px) {
   .investment__deals .single__form__input label{
     font-size: 12px;
   }
 }
 @media screen and (max-width:912px) {
+=======
+
+@media screen and (max-width:600px) {
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
     .investment__deals{
         width: 90%;
     
@@ -60,6 +65,10 @@ background-color: #fff;
     .single__form__input{
         width: 100%;
         margin: 10px 0;
+<<<<<<< HEAD
+=======
+        border-color: red;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
     }
   
     .investment__deals button{

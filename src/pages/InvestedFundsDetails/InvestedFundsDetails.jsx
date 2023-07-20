@@ -11,7 +11,11 @@ import GrowthRateChart from "../../components/GrowthRateChart/GrowthRateChart";
 function InvestedFundsDetails() {
   return (
     <div className="invested__funds__details__page">
+<<<<<<< HEAD
       <Sidebar activeFundStatus="yes" />
+=======
+      <Sidebar />
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 
       {/* contents */}
       <div className="contents">
@@ -28,10 +32,14 @@ function InvestedFundsDetails() {
             marginTop: "-40px",
           }}
         >
+<<<<<<< HEAD
           <p
             className="fund__desc"
             style={{ textAlign: "justify", width: "100%" }}
           >
+=======
+          <p className="fund__desc" style={{ textAlign: "justify" }}>
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
             A high-growth equity fund focused on technology startups. Our
             high-growth equity fund is dedicated to supporting technology
             startups on their path to success. With a focus on cutting-edge

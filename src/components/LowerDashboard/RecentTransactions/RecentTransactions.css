@@ -81,6 +81,7 @@ cursor: pointer;
 }
 
 
+<<<<<<< HEAD
         
 /* responsivness */
 @media screen and (max-width:1385px) {
@@ -163,6 +164,11 @@ cursor: pointer;
     }
 /* responsivness */
 @media screen and (max-width:912px) {
+=======
+    
+/* responsivness */
+@media screen and (max-width:600px) {
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 .recent__transactions{
     width: 90vw;
     flex-direction: column;
@@ -171,7 +177,11 @@ cursor: pointer;
     padding: 0;
 }
 .single__transaction{
+<<<<<<< HEAD
     width: 95%;
+=======
+    width: 325px;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
     margin: 5px auto;
     align-items: flex-start;
     justify-content: flex-start;

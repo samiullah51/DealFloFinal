@@ -72,8 +72,13 @@ const LineChart = () => {
   }, []);
 
   return (
+<<<<<<< HEAD
     <div style={{ width: "100%", height: "200px" }}>
       <canvas ref={chartRef}></canvas>
+=======
+    <div>
+      <canvas ref={chartRef} width="450" height="280px"></canvas>
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
     </div>
   );
 };

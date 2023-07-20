@@ -39,7 +39,11 @@ font-size: 12px;
 font-weight: 400;
 }
 .invested__funds__details__page .sectors{
+<<<<<<< HEAD
   width: 90%;
+=======
+  width: 100%;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -50,11 +54,15 @@ font-weight: 400;
 
 
 /* responsiveness */
+<<<<<<< HEAD
 @media screen and (max-width:912px) {
   .invested__funds__details__page{
   }
   .invested__funds__details__page .contents{
   }
+=======
+@media screen and (max-width:600px) {
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
   .fund__desc{
     width: 100%;
   }

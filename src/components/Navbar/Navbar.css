@@ -6,8 +6,13 @@
    justify-content: space-between;
    background-color: #fff;
    position: sticky;
+<<<<<<< HEAD
    top: 0px;
    z-index: 9919;
+=======
+   top: 0;
+   z-index: 999;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 }
 .navbar__responsive{
     display: none;
@@ -71,8 +76,11 @@
 .navbar .profile__info{
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     position: relative;
     cursor: pointer;
+=======
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 }
 .navbar .profile__info img{
     width: 45px;
@@ -83,6 +91,7 @@
 .profile__info .MuiSvgIcon-root{
     color: #2B3F6C;
 }
+<<<<<<< HEAD
 .show__profile__modal{
     position: absolute;
     top: 46px;
@@ -111,6 +120,10 @@
 
 }
 @media screen and (max-width:1280px) {
+=======
+/* responsiveness */
+@media screen and (max-width:600px) {
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 .navbar{
     display: none;
 }
@@ -127,7 +140,11 @@
     top: 0;
     left: 0;
     z-index: 234234;
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+    background-color: #fff;
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 }
 .navbar__responsive .search__wrapper{
 
@@ -206,6 +223,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     position: relative;
 
 }
@@ -224,6 +242,8 @@ align-items: center;
 .show__profile__modal p {
     padding: 5px;
     cursor: pointer;
+=======
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 }
 .res__profile__info img{
     width: 50px;

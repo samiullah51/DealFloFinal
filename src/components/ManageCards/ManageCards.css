@@ -49,6 +49,7 @@
 }
 
 
+<<<<<<< HEAD
   
 /* responsive */
 @media screen and (max-width:1400px) {
@@ -64,6 +65,8 @@
     }
   
   }
+=======
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 /* responsiveness */
 @media screen and (max-width:600px) {
    .manage__cards .single__card{

@@ -25,7 +25,11 @@ margin: 10px;
 }
 
 
+<<<<<<< HEAD
 @media screen and (max-width:912px) {
+=======
+@media screen and (max-width:600px) {
+>>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 .growth__rate__chart{
     display: none;
 }
