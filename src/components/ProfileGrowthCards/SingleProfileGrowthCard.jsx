@@ -1,8 +1,9 @@
 import React from "react";
 import fundicon from "../../assets/fundicon.svg";
+import { Link } from "react-router-dom";
 function SingleProfileGrowthCard({ totalInvest, currentVal, totalReturn }) {
   return (
-    <div className="single__profile__growth__card">
+    <Link to="/portfoliodetails" className="single__profile__growth__card">
       <div className="proifle__growth__header">
         <img src={fundicon} alt="" />
         <div>
@@ -26,7 +27,7 @@ function SingleProfileGrowthCard({ totalInvest, currentVal, totalReturn }) {
           <p>{totalReturn}</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
