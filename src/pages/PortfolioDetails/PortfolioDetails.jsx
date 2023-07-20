@@ -8,7 +8,7 @@ import LineChart3 from "../../LineChart3";
 function PortfolioDetails() {
   return (
     <div className="portfolio__details__page">
-      <Sidebar />
+      <Sidebar activePortDetails="yes" />
       <div className="contents">
         <Navbar />
 

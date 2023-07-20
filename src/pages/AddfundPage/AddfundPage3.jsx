@@ -9,7 +9,7 @@ function AddfundPage3() {
   return (
     <div className="add__fund__page">
       {/* sidebar */}
-      <Sidebar />
+      <Sidebar addFundStatus="yes" />
 
       <div className="contents">
         {/* navbar */}

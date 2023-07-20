@@ -11,7 +11,7 @@ import GrowthRateChart from "../../components/GrowthRateChart/GrowthRateChart";
 function InvestedFundsDetails() {
   return (
     <div className="invested__funds__details__page">
-      <Sidebar />
+      <Sidebar activeFundStatus="yes" />
 
       {/* contents */}
       <div className="contents">

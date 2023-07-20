@@ -31,6 +31,9 @@ function Sidebar({
   activeStatus,
   activeManageStatus,
   activePortStatus,
+  activeFundStatus,
+  activePortDetails,
+  addFundStatus,
 }) {
   const sidebar = useSelector((state) => state.sidebar);
   const dispatch = useDispatch();
@@ -59,9 +62,22 @@ function Sidebar({
               />
               <span>Dashboard</span>
             </NavLink>
-            <NavLink to="/investfund" className="single__item">
+            <NavLink
+              to="/investfund"
+              className={
+                activeFundStatus === "yes" || addFundStatus === "yes"
+                  ? "single__item active"
+                  : "single__item"
+              }
+            >
               <img
-                src={status === "walletActive" ? walletActive : investicon}
+                src={
+                  status === "walletActive" ||
+                  activeFundStatus === "yes" ||
+                  addFundStatus === "yes"
+                    ? walletActive
+                    : investicon
+                }
                 alt=""
               />
               <span>Investments Funds</span>
@@ -104,14 +120,14 @@ function Sidebar({
             <NavLink
               to="/portfolio"
               className={
-                status === "ActivePortfolio"
+                status === "ActivePortfolio" || activePortDetails === "yes"
                   ? "single__item active"
                   : "single__item"
               }
             >
               <img
                 src={
-                  status === "ActivePortfolio" || activePortStatus === "yes"
+                  status === "ActivePortfolio" || activePortDetails === "yes"
                     ? ActivePortfolio
                     : chart
                 }
