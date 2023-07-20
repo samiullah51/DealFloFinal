@@ -13,6 +13,7 @@ import InvestmentManagePage from "./pages/InvestmentManagePage/InvestmentManageP
 import InvestmentOpperDetails from "./pages/InvestmentOpperDetails/InvestmentOpperDetails";
 import InvestmentOppertunityPage from "./pages/InvestmentOppertunityPage/InvestmentOppertunityPage";
 import OnboardingPage from "./pages/OnboardingPage/OnboardingPage";
+import PortfolioDetails from "./pages/PortfolioDetails/PortfolioDetails";
 import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
 import RegistrationPage from "./pages/RegistrationPage/RegistrationPage";
 import RegistrationPage2 from "./pages/RegistrationPage2/RegistrationPage2";
@@ -53,6 +54,7 @@ function App() {
           element={<InvestmentOpperDetails />}
         />
         <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/portfoliodetails" element={<PortfolioDetails />} />
       </Routes>
     </>
   );
