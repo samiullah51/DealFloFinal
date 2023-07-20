@@ -56,11 +56,8 @@ function App() {
           path="/investoppertunitydetails"
           element={<InvestmentOpperDetails />}
         />
-<<<<<<< HEAD
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/portfoliodetails" element={<PortfolioDetails />} />
-=======
->>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
       </Routes>
     </>
   );
