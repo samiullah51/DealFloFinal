@@ -13,11 +13,8 @@ import InvestmentManagePage from "./pages/InvestmentManagePage/InvestmentManageP
 import InvestmentOpperDetails from "./pages/InvestmentOpperDetails/InvestmentOpperDetails";
 import InvestmentOppertunityPage from "./pages/InvestmentOppertunityPage/InvestmentOppertunityPage";
 import OnboardingPage from "./pages/OnboardingPage/OnboardingPage";
-<<<<<<< HEAD
 import PortfolioDetails from "./pages/PortfolioDetails/PortfolioDetails";
 import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
-=======
->>>>>>> 8cae38f7efc1378a82e84feae3e0199a777dfe0a
 import RegistrationPage from "./pages/RegistrationPage/RegistrationPage";
 import RegistrationPage2 from "./pages/RegistrationPage2/RegistrationPage2";
 import RiskAssessmentPage from "./pages/RiskAssessmentPage/RiskAssessmentPage";
