@@ -28,7 +28,7 @@ function RolePage() {
             <label htmlFor="firm">
               <Link to="/signin">
                 <input type="radio" name="role" />
-                <span>Firdm</span>
+                <span>Firddm</span>
               </Link>
             </label>
           </div>
